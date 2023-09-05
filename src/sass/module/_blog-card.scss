@@ -4,6 +4,8 @@
   font-weight: $normal;
   font-size: rem(16);
   line-height: calc(24/16);
+  border-bottom: 1px solid $green-accent; /* 線のスタイルと色を指定 */
+  padding-bottom: 5px; /* タイトルと線の間隔を調整 */
 }
 
 .blog-card__text{
@@ -18,7 +20,7 @@
 }
 
 .blog-card__body{
-  padding: rem(24) rem(16);
+  padding-top: rem(24);
 }
 
 .blog-card__text{
@@ -30,13 +32,53 @@ padding-top: rem(16);
   background-color: $white;
 }
 
+.blog-card:nth-child(3n+1){
+  padding-left: 0;
+}
+
+.blog-card__img{
+  padding-top: 66.777%;//201/301*100%
+  position: relative;
+}
+
+.blog-card__img img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.blog-card__inner{
+  padding: rem(16);
+}
+
 .blog__items{
   display: flex;
+  justify-content: space-between;
 }
 
 .blog__inner{
   padding: rem(16) rem(16) rem(24);
-  max-width: rem(1110);
+  max-width: rem(1079);
   width: 100%;
   margin: auto;
+}
+
+.card-list{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-list__item{
+  max-width: calc(33.333% - rem(40) * 2 / 3);
+  width: 100%;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3); /* ボックスシャドウの設定 */
+}
+
+.card-list__item + 
+.card-list__item{
+  margin-left: rem(40);
 }
