@@ -32,10 +32,6 @@ padding-top: rem(16);
   background-color: $white;
 }
 
-.blog-card:nth-child(3n+1){
-  padding-left: 0;
-}
-
 .blog-card__img{
   padding-top: 66.777%;//201/301*100%
   position: relative;
@@ -57,7 +53,6 @@ padding-top: rem(16);
 
 .blog__items{
   display: flex;
-  justify-content: space-between;
 }
 
 .blog__inner{
@@ -81,4 +76,12 @@ padding-top: rem(16);
 .card-list__item + 
 .card-list__item{
   margin-left: rem(40);
+}
+
+.card-list__item:nth-child(3n+1){
+  margin-left: 0;
+}
+
+.card-list__item:nth-child(n+4){
+  margin-top: rem(25);
 }
