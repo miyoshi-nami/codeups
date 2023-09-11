@@ -30,7 +30,7 @@ $drawer-color: #fff; //ドロワー線の色
 }
 /*is-OPEN時の動き*/
 .hamburger.is-open span:nth-child(1) {
- top: 5px;
+ top: 12px;
  transform: rotate(45deg);
 }
 
@@ -40,6 +40,6 @@ $drawer-color: #fff; //ドロワー線の色
 }
 
 .hamburger.is-open span:nth-child(3) {
- top: -7px;
+ top: -10px;
  transform: rotate(-45deg);
 }
