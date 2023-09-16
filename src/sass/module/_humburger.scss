@@ -22,15 +22,15 @@ $drawer-color: #fff; //ドロワー線の色
 }
 
 .hamburger span:nth-child(2) {
- margin: rem(10) 0;
+ margin: rem(5) 0;
 }
 
-.c-hamburger span:nth-child(3) {
+.hamburger span:nth-child(3) {
  top: 0;
 }
 /*is-OPEN時の動き*/
 .hamburger.is-open span:nth-child(1) {
- top: 12px;
+ top: 9px;
  transform: rotate(45deg);
 }
 
