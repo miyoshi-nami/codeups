@@ -7,6 +7,7 @@
   right: 0;
   background-color: rgba($color: $green, $alpha: 0.68);
   height: rem(80);
+  z-index: 999;
 }
 
 .header__inner{
@@ -24,16 +25,3 @@
     width: rem(133);
   }
 }
-
-.sp-nav{
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: $green-accent;
-  color: $white;
-  width: 100%;
-  height: 100vh;
-  padding-top: rem(104);
-}
-

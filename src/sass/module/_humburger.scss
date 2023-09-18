@@ -8,6 +8,16 @@ $drawer-color: #fff; //ドロワー線の色
  z-index:9999;
 }
 
+.click-area{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  cursor: pointer; /* カーソルをポインターに変更 */
+  opacity: 0; /* 透明に設定 */
+}
+
 .hamburger span {
  position: relative;
  display: block;
@@ -22,15 +32,16 @@ $drawer-color: #fff; //ドロワー線の色
 }
 
 .hamburger span:nth-child(2) {
- margin: rem(5) 0;
+ top: 11px;
 }
 
 .hamburger span:nth-child(3) {
- top: 0;
+ top: 22px;
 }
+
 /*is-OPEN時の動き*/
 .hamburger.is-open span:nth-child(1) {
- top: 9px;
+ top: 2px;
  transform: rotate(45deg);
 }
 
@@ -40,6 +51,6 @@ $drawer-color: #fff; //ドロワー線の色
 }
 
 .hamburger.is-open span:nth-child(3) {
- top: -10px;
+ top: 2px;
  transform: rotate(-45deg);
 }

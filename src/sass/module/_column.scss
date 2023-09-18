@@ -1,0 +1,17 @@
+@use "global" as *;
+
+.column {
+  box-sizing: border-box; /* ボーダーボックスモデルを使用 */
+}
+
+/* ブロックの修飾子のスタイル */
+.column__left {
+  width: 48%; /* カラムの幅を設定 */
+  float: left; /* 左に浮動 */
+}
+
+.column__right {
+  padding-left: rem(10);
+  width: 48%; /* カラムの幅を設定 */
+  float: right; /* 右に浮動 */
+}
