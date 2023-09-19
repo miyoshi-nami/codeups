@@ -1,0 +1,25 @@
+@use "global" as *;
+
+.icon a {
+  display: inline-block;
+}
+
+.icon__facebook {
+  width: rem(24);
+  /* 画像の幅を調整 */
+  height: rem(24);
+  /* 画像の高さを調整 */
+  background-image: url(../images/common/FacebookLogo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.icon__instagram {
+  width: rem(20);
+  /* 画像の幅を調整 */
+  height: rem(20);
+  /* 画像の高さを調整 */
+  background-image: url(../images/common/instagramLogo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}

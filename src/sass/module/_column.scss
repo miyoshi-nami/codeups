@@ -2,16 +2,17 @@
 
 .column {
   box-sizing: border-box; /* ボーダーボックスモデルを使用 */
+  display: flex;
+  padding-left:rem(10);
 }
 
 /* ブロックの修飾子のスタイル */
 .column__left {
-  width: 48%; /* カラムの幅を設定 */
-  float: left; /* 左に浮動 */
+  width: 50%; /* カラムの幅を設定 */
+  padding-left: rem(10);
 }
 
 .column__right {
-  padding-left: rem(10);
-  width: 48%; /* カラムの幅を設定 */
-  float: right; /* 右に浮動 */
+  padding-left: rem(20);
+  width: 50%; /* カラムの幅を設定 */
 }
