@@ -1,0 +1,22 @@
+@use "global" as *;
+
+.slider {
+  height: 100vh;
+  margin-inline: auto;
+  overflow: hidden; /* 画像がはみ出ないようにする */
+  width: 100%;
+}
+.slick-img img {
+  width: 100%;
+}
+@keyframes zoomUp {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.15); /* 拡大率 */
+  }
+}
+.add-animation {
+  animation: zoomUp 10s linear 0s normal both;
+}

@@ -1,0 +1,30 @@
+@use "global" as *;
+
+.mv {
+  position: relative;
+}
+
+.mv__title {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.title__main {
+  text-transform: uppercase;
+  font-size: rem(40);
+  font-weight: $regular;
+  color: $white;
+  letter-spacing: 0.54em;
+  font-family: $en2-font-family;
+}
+
+.title__sub {
+  font-size: rem(20);
+  font-weight: $regular;
+  color: $white;
+  font-family: $en-font-family;
+  text-align: center;
+}
