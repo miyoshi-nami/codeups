@@ -1,0 +1,25 @@
+@use "global" as *;
+
+.card-list{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-list__item{
+  max-width: calc(33.333% - rem(40) * 2 / 3);
+  width: 100%;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3); /* ボックスシャドウの設定 */
+}
+
+.card-list__item + 
+.card-list__item{
+  margin-left: rem(40);
+}
+
+.card-list__item:nth-child(3n+1){
+  margin-left: 0;
+}
+
+.card-list__item:nth-child(n+4){
+  margin-top: rem(25);
+}

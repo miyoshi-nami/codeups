@@ -1,0 +1,17 @@
+@use "global" as *;
+
+.about-text {}
+
+.about-text__title {
+  font-family: $en-font-family;
+  font-size: rem(40);
+  font-weight: $regular;
+  color: $green-accent;
+  letter-spacing: 1;
+}
+
+.about-text__text {
+  text-align: left;
+  font-weight: $regular;
+  letter-spacing: calc(24/16);
+}

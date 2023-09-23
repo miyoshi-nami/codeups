@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.blog__inner{
+  padding: rem(16) rem(16) rem(24);
+  max-width: rem(1079);
+  width: 100%;
+  margin: auto;
+}

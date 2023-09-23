@@ -4,10 +4,14 @@
   position: relative;
 }
 
+.mv img{
+  height: 100vh;
+}
+
 .mv__title {
   position: absolute;
   z-index: 1;
-  top: 50%;
+  top: 40vh;
   left: 50%;
   transform: translateX(-50%);
 }

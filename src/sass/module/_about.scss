@@ -1,0 +1,14 @@
+@use "global" as *;
+
+.about{
+  display: block;
+  text-align: center;
+}
+
+.about__items{
+  padding-top: rem(24);
+}
+
+.about__button{
+  padding-top: rem(40);
+}

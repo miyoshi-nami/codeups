@@ -1,0 +1,15 @@
+@use "global" as *;
+
+.card-list--campaign{
+  display: flex;
+}
+
+.card-list--campaign__item{
+  width: 280px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3); /* ボックスシャドウの設定 */
+}
+
+.card-list--campaign__item + 
+.card-list--campaign__item{
+  margin-left: rem(24);
+}
