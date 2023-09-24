@@ -1,0 +1,15 @@
+@use "global" as *;
+
+.information{
+  display: block;
+  text-align: center;
+  background-color: $green2;
+}
+
+.information__items{
+  padding-top: rem(24);
+}
+
+.information__button{
+  padding-top: rem(40);
+}
