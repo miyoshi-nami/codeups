@@ -1,0 +1,32 @@
+@use "global" as *;
+
+.about-item {
+  width: 100%;
+  position: relative;
+}
+
+.about-item__img {
+  padding-top: 61.449275%; //212/345*100%
+  position: relative;
+  // background-image: url(../images/common/ocean01.jpg);
+  // background-size: contain;
+}
+
+.about-item__img--02 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 81.449275%;
+  height: auto;
+  object-fit: cover;
+}
+
+.about-item__img--01 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 37.101449%;
+  height: auto;
+  object-fit: cover;
+  z-index: 1;
+}
