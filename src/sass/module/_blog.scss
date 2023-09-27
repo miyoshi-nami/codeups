@@ -1,5 +1,19 @@
 @use "global" as *;
 
+.blog{
+  display: block;
+  text-align: center;
+}
+
+.blog__items{
+  padding-top: rem(24);
+  text-align: left;
+}
+
+.blog__button{
+  padding-top: rem(40);
+}
+
 .blog__inner{
   padding: rem(16) rem(16) rem(24);
   max-width: rem(1079);

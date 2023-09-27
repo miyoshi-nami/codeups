@@ -1,0 +1,42 @@
+@use "global" as *;
+
+.card-list--voice {
+  display: block;
+
+  @include mq(md) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.card-list--voice__item {
+  width: 100%;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  /* ボックスシャドウの設定 */
+
+  @include mq(md) {
+    max-width: calc(33.333% - rem(40) * 2 / 3);
+  }
+}
+
+.card-list--voice__item:not(:last-child){
+  margin-bottom: rem(40);
+}
+
+.card-list--voice__item+.card-list--voice__item {
+  @include mq(md) {
+    margin-left: rem(40);
+  }
+}
+
+.card-list--voice__item:nth-child(3n+1) {
+  @include mq(md) {
+    margin-left: 0;
+  }
+}
+
+.card-list--voice__item:nth-child(n+4) {
+  @include mq(md) {
+    margin-top: rem(25);
+  }
+}

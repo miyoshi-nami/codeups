@@ -1,0 +1,26 @@
+@use "global" as *;
+
+.top {
+  padding-top: 40.936102%;
+  position: relative;
+}
+
+.top__left {
+  display: block;
+  width: 47.603834%;
+  text-align: left;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+.top__right {
+  display: flex;
+  align-items: flex-end;
+  width: 48.242812%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+}

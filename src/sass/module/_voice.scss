@@ -1,0 +1,14 @@
+@use "global" as *;
+
+.voice{
+  display: block;
+  text-align: center;
+}
+
+.voice__items{
+  padding-top: rem(24);
+}
+
+.voice__button{
+  padding-top: rem(40);
+}
