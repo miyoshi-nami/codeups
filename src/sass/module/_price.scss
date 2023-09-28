@@ -1,26 +1,15 @@
 @use "global" as *;
 
 .price{
-display: flex;
-align-items: baseline;
-justify-content: center;
-}
-
-.price__big {
-  padding-left: rem(18);
-  font-size: rem(32);
-  font-weight: $bold;
-  color: $green-accent;
-  font-family: $en-font-family;
-}
-
-.price__small {
-  text-decoration: line-through 3px $red;
-}
-
-.price__small span {
   display: block;
-  align-items: center;
-  font-size: rem(20);
-  color: $green;
+  text-align: center;
+  background-color: $green2;
+}
+
+.price__items{
+  padding-top: rem(24);
+}
+
+.price__button{
+  padding-top: rem(40);
 }

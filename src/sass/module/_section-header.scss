@@ -20,10 +20,32 @@
   color: $green-accent;
 }
 
+.section-header__title--contact::first-letter{
+  color: $green-accent;
+}
+
+.section-header__title--contact{
+  text-transform: capitalize;
+  color: $green;
+  font-family: $en-font-family;
+  font-weight: $normal;
+  line-height: 1;
+  font-size: rem(80);
+}
+
 .section-header__subtitle {
   font-family: $jp2-font-family;
   color: $green-accent;
   line-height: calc(18/12);
   font-size: rem(12);
   text-align: center;
+}
+
+.section-header__text{
+  font-family: $jp2-font-family;
+  color: $green-accent;
+  line-height: calc(18/14);
+  font-size: rem(14);
+  text-align: center;
+  padding-top: rem(8);
 }

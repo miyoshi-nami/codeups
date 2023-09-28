@@ -1,0 +1,17 @@
+@use "global" as *;
+
+.price-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-items__title {
+  width: fit-content;
+  font-size: rem(14);
+  line-height: calc(24/14);
+}
+
+.price-items__price {
+  width: fit-content;
+  font-size: rem(14);
+}

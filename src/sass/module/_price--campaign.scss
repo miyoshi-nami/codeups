@@ -1,0 +1,26 @@
+@use "global" as *;
+
+.price--campaign{
+display: flex;
+align-items: baseline;
+justify-content: center;
+}
+
+.price--campaign__big {
+  padding-left: rem(18);
+  font-size: rem(32);
+  font-weight: $bold;
+  color: $green-accent;
+  font-family: $en-font-family;
+}
+
+.price--campaign__small {
+  text-decoration: line-through 3px $red;
+}
+
+.price--campaign__small span {
+  display: block;
+  align-items: center;
+  font-size: rem(20);
+  color: $green;
+}

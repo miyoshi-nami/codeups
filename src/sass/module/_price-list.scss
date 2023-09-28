@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.price-list{
+display: block;
+}
+
+.price-list__item{
+  padding-top: rem(8);
+}
