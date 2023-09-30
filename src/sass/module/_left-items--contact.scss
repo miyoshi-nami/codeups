@@ -1,0 +1,24 @@
+@use "global" as *;
+
+.left-items--contact{
+display: block;
+width: 100%;
+}
+
+.left-items--contact__img{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: rem(6);
+  border-bottom: 1px solid $green-accent;
+}
+
+.left-items--contact__img img{
+  width: calc(176/375)*100%;
+}
+
+.left-items--contact__address{
+  width: 100%;
+  text-align: center;
+  padding-top: rem(16);
+}

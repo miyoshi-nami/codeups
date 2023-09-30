@@ -1,0 +1,26 @@
+@use "global" as *;
+
+.contact{
+  position: relative;
+  display: block;
+  text-align: center;
+}
+
+.contact__img{
+  position: absolute;
+  top: rem(14);
+  right: rem(15);
+  width: calc(109/375)*100%;
+}
+
+.contact__left{
+  padding: 0 rem(25);
+}
+
+.contact__right{
+  padding-top: rem(40);
+}
+
+.contact__button{
+  padding-top: rem(40);
+}

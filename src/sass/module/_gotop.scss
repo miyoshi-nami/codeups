@@ -1,0 +1,11 @@
+@use "global" as *;
+
+.gotop{
+    display: block;
+    width: rem(48/375)*100%;
+    height: rem(48/375)*100%;
+    position: fixed;
+    bottom: rem(20);
+    right: rem(20);
+    z-index: 10000;
+}

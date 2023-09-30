@@ -1,0 +1,16 @@
+@use "global" as *;
+
+.contact-address{
+  display: block;
+  width: 100%;
+}
+
+.contact-address__iframe{
+ width: 100%;
+ padding-top: rem(16);
+}
+
+.contact-address__iframe iframe{
+  width: 100%;
+  border: none;
+ }
