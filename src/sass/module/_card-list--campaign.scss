@@ -1,15 +1,27 @@
 @use "global" as *;
 
-.card-list--campaign{
+.card-list--campaign {
   display: flex;
-}
+  
+    @include mq("md") {
+      width: 100vw;
+    }
+  }
 
-.card-list--campaign__item{
+.card-list--campaign__item {
   width: 280px;
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3); /* ボックスシャドウの設定 */
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+
+  /* ボックスシャドウの設定 */
+  @include mq("md") {
+    width: 333px;
+  }
 }
 
-.card-list--campaign__item + 
-.card-list--campaign__item{
+.card-list--campaign__item+.card-list--campaign__item {
   margin-left: rem(24);
+
+  @include mq("md") {
+    margin-left: rem(40);
+  }
 }

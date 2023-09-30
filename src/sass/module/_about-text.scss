@@ -2,7 +2,14 @@
 
 .about-text {
   width: 100%;
-}
+  @include mq("md"){
+    z-index: 1;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    right: rem(40);
+  }
+  }
 
 .about-text__title {
   padding-top: rem(40);
@@ -13,6 +20,10 @@
   color: $green-accent;
   letter-spacing: 1;
   line-height: 1;
+  @include mq("md"){
+    width: 50%;
+    color: $white;
+  }
 }
 
 .about-text__text {
@@ -20,4 +31,8 @@
   text-align: left;
   font-weight: $regular;
   letter-spacing: calc(24/16);
+  @include mq("md"){
+    width: 50%;
+    color: $white;
+  }
 }
