@@ -1,20 +1,52 @@
 @use "global" as *;
 
-.blog{
+.blog {
+  position: relative;
   display: block;
   text-align: center;
+
+  @include mq(md) {
+    background-image: url(../images/common/Rectangle03.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% calc(500/997)*100%; //パディングによる
+    width: 100%;
+  }
 }
 
-.blog__items{
+.blog__img {
+  display: none;
+
+  @include mq(md) {
+    display: block;
+    position: absolute;
+    top: rem(24);
+    left: rem(100);
+    width: calc(377/1440)*100%;
+  }
+}
+
+.blog__img img {
+  width: 100%;
+}
+
+.blog__items {
   padding-top: rem(24);
   text-align: left;
+
+  @include mq("md") {
+    padding-top: rem(80);
+  }
 }
 
-.blog__button{
+.blog__button {
   padding-top: rem(40);
+
+  @include mq("md") {
+    padding-top: rem(80);
+  }
 }
 
-.blog__inner{
+.blog__inner {
   padding: rem(16) rem(16) rem(24);
   max-width: rem(1079);
   width: 100%;

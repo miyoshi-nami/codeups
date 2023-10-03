@@ -1,14 +1,55 @@
 @use "global" as *;
 
-.voice{
+.voice {
   display: block;
   text-align: center;
+  @include mq(md) {
+    position: relative;
+  }
 }
 
-.voice__items{
+.voice__img--left{
+  display: none;
+  @include mq(md) {
+    display: block;
+    position: absolute;
+    top: rem(20);
+    left: calc(100/1440)*100%;
+    width: calc(301/1440)*100%;
+    height: auto;
+  }
+}
+
+.voice__inner{
+  @include mq(md) {
+    position: relative;
+  }
+}
+
+.voice__img--right{
+  display: none;
+  @include mq(md) {
+    display: block;
+    position: absolute;
+    top: rem(438+43);
+    right: rem(25);
+    width: calc(71/1130)*100%;
+    height: auto;
+  }
+}
+
+.voice__items {
   padding-top: rem(24);
+
+  @include mq(md) {
+    display: flex;
+  }
 }
 
-.voice__button{
+.voice__button {
   padding-top: rem(40);
+
+  @include mq("md") {
+    padding-top: rem(80);
+  }
 }

@@ -1,9 +1,32 @@
 @use "global" as *;
 
-.price-item{
-
+.price-item {
+  @include mq(md) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
-.price-item__text{
+.price-item__img {
+  @include mq(md) {
+    width: calc(492/1080)*100%;
+    order: 2;
+  }
+}
+
+.price-item__left {
+  @include mq(md) {
+    width: calc(492/1080)*100%;
+    order: 1;
+  }
+}
+
+.price-item__text {
   padding-top: rem(40);
+}
+
+.price-item__text:first-child {
+  @include mq(md) {
+    padding-top: rem(0);
+  }
 }

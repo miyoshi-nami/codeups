@@ -15,12 +15,15 @@
   /* ボックスシャドウの設定 */
 
   @include mq(md) {
-    max-width: calc(33.333% - rem(40) * 2 / 3);
+    max-width: calc(50% - rem(40) * 1 / 2);
   }
 }
 
 .card-list--voice__item:not(:last-child){
   margin-bottom: rem(40);
+  @include mq(md) {
+    margin-bottom: 0;
+  }
 }
 
 .card-list--voice__item+.card-list--voice__item {

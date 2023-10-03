@@ -3,6 +3,10 @@
 .campaign {
   display: block;
   text-align: center;
+
+  @include mq("md") {
+    overflow: hidden;
+  }
 }
 
 .campaign__items {
@@ -11,4 +15,8 @@
 
 .campaign__button {
   padding-top: rem(40);
+
+  @include mq("md") {
+    padding-top: rem(80);
+  }
 }

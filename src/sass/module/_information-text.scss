@@ -2,6 +2,10 @@
 
 .information-text {
   width: 100%;
+
+  @include mq("md") {
+    width: calc(492/1080)*100%;
+  }
 }
 
 .information-text__title {

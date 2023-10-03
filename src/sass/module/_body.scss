@@ -16,7 +16,7 @@
 
   @include mq("md") {
     padding-top: rem(140);
-    padding-bottom: rem(0);
+    padding-bottom: rem(140);
   }
 }
 
@@ -26,7 +26,17 @@
 
   @include mq("md") {
     padding-top: rem(140);
-    padding-bottom: rem(0);
+    padding-bottom: rem(140);
+  }
+}
+
+.section__blog {
+  padding-top: rem(40);
+  padding-bottom: rem(40);
+
+  @include mq("md") {
+    padding-top: rem(140);
+    padding-bottom: 0;
   }
 }
 
@@ -36,7 +46,7 @@
 
   @include mq("md") {
     padding-top: rem(140);
-    padding-bottom: rem(0);
+    padding-bottom: rem(140);
   }
 }
 
@@ -46,16 +56,16 @@
 
   @include mq("md") {
     padding-top: rem(140);
-    padding-bottom: rem(0);
+    padding-bottom: rem(140);
   }
 }
 
 .section__contact {
-  padding-top: rem(40);
+  padding-top: rem(80);
   padding-bottom: rem(40);
 
   @include mq("md") {
     padding-top: rem(140);
-    padding-bottom: rem(0);
+    padding-bottom: rem(140);
   }
 }

@@ -243,14 +243,18 @@
           </div>
           <div class="about-item__text about-text">
             <h3 class="about-text__title">Dive into<br>the Ocean</h3>
-            <p class="about-text__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-              ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
+            <div class="about-text__text about-text-right">
+              <p class="about-text-right__text">
+                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
+              </p>
+              <div class="about-text-right__button">
+                <a href="#" class="button">View more<span class="arrow"></span></a>
+              </div>
+            </div>
           </div>
+          <div class="about-item__fish"><img class="about-item__img--03" src="./assets/images/common/fish02.png"
+              alt="サンゴのイラスト"></div>
         </div>
-        <div class="about__button">
-          <a href="#" class="button">View more<span class="arrow"></span></a>
-        </div>
-      </div>
     </section>
     <section class="section__information information">
       <div class="information__inner inner">
@@ -267,18 +271,21 @@
             <h3 class="information-text__title">ライセンス講習</h3>
             <p class="information-text__text">
               当店はダイビングライセンス（Cカード）世界最大の教育機関PADIの「正規店」として店舗登録されています。<br>正規登録店として、安心安全に初めての方でも安心安全にライセンス取得をサポート致します。</p>
+            <div class="information__button">
+              <a href="#" class="button">View more<span class="arrow"></span></a>
+            </div>
           </div>
-        </div>
-        <div class="information__button">
-          <a href="#" class="button">View more<span class="arrow"></span></a>
         </div>
       </div>
     </section>
     <section class="section__blog blog">
+      <div class="blog__img">
+        <img src="./assets/images/common/fish03.png" alt="キンギョハナダイの群れ">
+      </div>
       <div class="blog__inner inner">
         <div class="blog__title section-header">
-          <h2 class="section-header__title">blog</h2>
-          <p class="section-header__subtitle">ブログ</p>
+          <h2 class="section-header__title--blog">blog</h2>
+          <p class="section-header__subtitle--blog">ブログ</p>
         </div>
         <div class="blog__items card-list--blog">
           <a href="#" class="card-list--blog__item card">
@@ -336,7 +343,13 @@
       </div>
     </section>
     <section class="section__voice voice">
+      <div class="voice__img--left">
+        <img src="./assets/images/common/fish04.png" alt="キンギョハナダイの群れ">
+      </div>
       <div class="voice__inner inner">
+        <div class="voice__img--right">
+          <img src="./assets/images/common/fish05.png" alt="タツノオトシゴ">
+        </div>
         <div class="voice__title section-header">
           <h2 class="section-header__title">voice</h2>
           <p class="section-header__subtitle">お客様の声</p>
@@ -394,6 +407,9 @@
       </div>
     </section>
     <section class="section__price price">
+      <div class="price__img">
+        <img src="./assets/images/common/fish01.png" alt="キンギョハナダイの群れ">
+      </div>
       <div class="price__inner inner">
         <div class="price__title section-header">
           <h2 class="section-header__title">price</h2>
@@ -402,7 +418,10 @@
 
         <div class="price__items price-item">
           <div class="price-item__img">
-            <img src="./assets/images/common/ocean04.jpg" alt="ウミガメの写真">
+            <picture>
+              <source srcset="./assets/images/common/ocean05.jpg" media="(min-width: 768px)" />
+              <img src="./assets/images/common/ocean04.jpg" alt="ウミガメの写真">
+            </picture>
           </div>
           <ul class="price-item__left">
             <li class="price-item__text price-text">
@@ -515,32 +534,34 @@
         <div class="contact__img">
           <img src="./assets/images/common/fish01.png" alt="キンギョハナダイの群れ">
         </div>
-        <div class="contact__left left-items--contact">
-          <div class="left-items--contact__img">
-            <img src="./assets/images/common/CodeUps02.png" alt="codeups">
-          </div>
-          <div class="left-items--contact__address contact-address">
-            <p class="contact-address__text">沖縄県那覇市1-1<br>
-              TEL:0120-000-0000<br>
-              営業時間:8:30-19:00<br>
-              定休日:毎週火曜日
-            </p>
-            <div class="contact-address__iframe">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3717.883379781088!2d-157.82793032485193!3d21.2760833804359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c0072768b556fed%3A0x46dca24210a5121c!2z44OP44Kk44Ki44OD44OI44Oq44O844K444Kn44Oz44K344O8IOODr-OCpOOCreOCreODk-ODvOODgSDjg6rjgr7jg7zjg4gm44K544OR!5e0!3m2!1sja!2sjp!4v1695940930750!5m2!1sja!2sjp"
-                allow="fullscreen" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-              </iframe>
+        <div class="contact__items contact-container">
+          <div class="contact-container__left left-items--contact">
+            <div class="left-items--contact__img">
+              <img src="./assets/images/common/CodeUps02.png" alt="codeups">
+            </div>
+            <div class="left-items--contact__address contact-address">
+              <p class="contact-address__text">沖縄県那覇市1-1<br>
+                TEL:0120-000-0000<br>
+                営業時間:8:30-19:00<br>
+                定休日:毎週火曜日
+              </p>
+              <div class="contact-address__iframe">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3717.883379781088!2d-157.82793032485193!3d21.2760833804359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c0072768b556fed%3A0x46dca24210a5121c!2z44OP44Kk44Ki44OD44OI44Oq44O844K444Kn44Oz44K344O8IOODr-OCpOOCreOCreODk-ODvOODgSDjg6rjgr7jg7zjg4gm44K544OR!5e0!3m2!1sja!2sjp!4v1695940930750!5m2!1sja!2sjp"
+                  allow="fullscreen" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="contact__right right-items--contact">
-          <div class="contact__title section-header">
-            <h2 class="section-header__title--contact">contact</h2>
-            <p class="section-header__subtitle">お問合せ</p>
-            <p class="section-header__text">ご予約・お問い合わせはコチラ</p>
-          </div>
-          <div class="contact__button">
-            <a href="#" class="button">Contact us<span class="arrow"></span></a>
+          <div class="contact-container__right right-items--contact">
+            <div class="contact__title section-header">
+              <h2 class="section-header__title--contact">contact</h2>
+              <p class="section-header__subtitle">お問合せ</p>
+              <p class="section-header__text">ご予約・お問い合わせはコチラ</p>
+            </div>
+            <div class="contact__button">
+              <a href="#" class="button">Contact us<span class="arrow"></span></a>
+            </div>
           </div>
         </div>
       </div>
@@ -599,6 +620,8 @@
               </ul>
             </li>
             <li class="list__item"><a href="">私たちについて</a></li>
+          </ul>
+          <ul class="list__items">
             <li class="list__item"><a href="">ダイビング情報</a>
               <ul class="sublist">
                 <li class="sublist__item"><a href="">ライセンス講習</a></li>
@@ -619,6 +642,8 @@
                 <li class="sublist__item"><a href="">ファンダイビング</a></li>
               </ul>
             </li>
+          </ul>
+          <ul class="list__items">
             <li class="list__item"><a href="">よくある質問</a></li>
             <li class="list__item"><a href="">プライバシーポリシー</a></li>
             <li class="list__item"><a href="">利用規約</a></li>

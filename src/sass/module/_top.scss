@@ -3,16 +3,21 @@
 .top {
   padding-top: 40.936102%;
   position: relative;
-}
+  @include mq("md"){
+    padding-top: calc(140/472)*100%;
+}}
 
 .top__left {
   display: block;
   width: 47.603834%;
   text-align: left;
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
-  height: 100%;
+  height: fit-content;
+  @include mq(md) {
+    width: calc((calc(276/472)*100%) - rem(16) * 1 / 2);
+  }
 }
 
 .top__right {
@@ -23,4 +28,7 @@
   bottom: 0;
   right: 0;
   height: 100%;
+  @include mq(md) {
+    width: calc((calc(180/472)*100%) - rem(16) * 1 / 2);
+  }
 }

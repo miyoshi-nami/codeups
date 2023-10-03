@@ -1,10 +1,16 @@
 @use "global" as *;
 
-.tab{
+.tab {
   display: block;
+
+  @include mq("md") {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
 }
 
-.tab__tag{
+.tab__tag {
   display: block;
   width: fit-content;
   font-size: rem(12);

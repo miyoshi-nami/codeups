@@ -1,11 +1,11 @@
 @use "global" as *;
 
-.left-items--contact{
-display: block;
-width: 100%;
+.left-items--contact {
+  display: block;
+  width: 100%;
 }
 
-.left-items--contact__img{
+.left-items--contact__img {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -13,12 +13,22 @@ width: 100%;
   border-bottom: 1px solid $green-accent;
 }
 
-.left-items--contact__img img{
-  width: calc(176/375)*100%;
+.left-items--contact__img img {
+  width: calc(174/295)*100%;
+
+  @include mq(md) {
+    width: calc(200/440)*100%;
+  }
 }
 
-.left-items--contact__address{
+.left-items--contact__address {
   width: 100%;
   text-align: center;
   padding-top: rem(16);
+
+  @include mq(md) {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
 }

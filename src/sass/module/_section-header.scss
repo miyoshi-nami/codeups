@@ -5,7 +5,7 @@
 }
 
 .section-header__title {
-  text-transform: capitalize;
+  text-transform: lowercase;
   color: $green;
   font-family: $en-font-family;
   font-weight: $normal;
@@ -18,7 +18,27 @@
 
 .section-header__title::first-letter {
   color: $green-accent;
+  text-transform: capitalize;
 }
+
+.section-header__title--blog {
+  text-transform: capitalize;
+  color: $green;
+  font-family: $en-font-family;
+  font-weight: $normal;
+  line-height: calc(40/32);
+  font-size: rem(32);
+  @include mq("md"){
+    font-size: rem(40);
+    color: $white;
+}}
+
+.section-header__title--blog::first-letter {
+  color: $green-accent;
+  text-transform: capitalize;
+  @include mq("md"){
+    color: $white;
+}}
 
 .section-header__title--contact::first-letter{
   color: $green-accent;
@@ -39,6 +59,17 @@
   line-height: calc(18/12);
   font-size: rem(12);
   text-align: center;
+}
+
+.section-header__subtitle--blog {
+  font-family: $jp2-font-family;
+  color: $green-accent;
+  line-height: calc(18/12);
+  font-size: rem(12);
+  text-align: center;
+  @include mq("md"){
+    color: $white;
+}
 }
 
 .section-header__text{

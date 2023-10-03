@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.left {}
+
+.left__top {
+  @include mq("md") {
+    padding-bottom: rem(8);
+  }
+}

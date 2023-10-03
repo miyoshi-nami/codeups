@@ -17,7 +17,9 @@
   /* 線のスタイルと色を指定 */
   padding-bottom: 5px;
   /* タイトルと線の間隔を調整 */
-}
+  @include mq("md"){
+    font-size: rem(24);
+}}
 
 .card--voice__body {
   padding-top: rem(16);
@@ -27,6 +29,9 @@
   width: 100%;
   padding-top: 77.483444%; //117/151*100%
   position: relative;
+  @include mq(md) {
+    padding-top: calc(140/180)*100%;
+  }
 }
 
 .card--voice__img img {

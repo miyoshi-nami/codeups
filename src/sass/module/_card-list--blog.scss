@@ -19,8 +19,11 @@
   }
 }
 
-.card-list--blog__item:not(:last-child){
+.card-list--blog__item:not(:last-child) {
   margin-bottom: rem(40);
+  @include mq(md) {
+    margin-bottom: 0;
+  }
 }
 
 .card-list--blog__item+.card-list--blog__item {

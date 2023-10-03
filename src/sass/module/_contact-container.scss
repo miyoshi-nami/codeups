@@ -1,0 +1,36 @@
+@use "global" as *;
+
+.contact-container {
+  @include mq(md) {
+    padding-top: calc(415/1080)*100%;
+    position: relative;
+    width: 100%;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    /* ボックスシャドウの設定 */
+  }
+}
+
+.contact-container__left {
+  padding: 0 rem(20);
+  @include mq(md) {
+    position: absolute;
+    left: calc(24/522)*100%;
+    top: 50%;
+    transform: translateY(-50%);
+    // padding: 0 rem(calc(80/522)*100) 0 0;
+    padding: 0 rem(80) 0 0;
+    width: calc(522/1080)*100%;
+    border-right: 1px solid $green-accent;
+    }
+}
+
+.contact-container__right {
+  padding-top: rem(40);
+  @include mq(md) {
+    position: absolute;
+    right: calc(115/1080)*100%;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-top: 0;
+    }
+}

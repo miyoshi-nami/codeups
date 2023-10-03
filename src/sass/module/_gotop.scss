@@ -8,7 +8,4 @@
     bottom: rem(20);
     right: rem(20);
     z-index: 10000;
-    @include mq("md"){
-      display: none;
-    }
 }
