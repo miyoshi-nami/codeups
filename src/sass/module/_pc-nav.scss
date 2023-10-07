@@ -1,0 +1,31 @@
+@use "global" as *;
+
+.pc-nav {
+  color: $white;
+}
+
+.pc-nav__items {
+  display: flex;
+  height: inherit;
+}
+
+.pc-nav__item {
+  height: inherit;
+  display: block;
+  text-align: center;
+}
+
+.pc-nav__item--main {
+  text-transform: lowercase;
+}
+
+.pc-nav__item--main::first-letter {
+  text-transform: capitalize;
+  font-size: rem(18);
+  line-height: 1;
+}
+
+.pc-nav__item--sub {
+  font-size: rem(10);
+  line-height: calc(15/10);
+}

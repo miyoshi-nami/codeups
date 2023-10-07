@@ -8,4 +8,8 @@
     bottom: rem(20);
     right: rem(20);
     z-index: 10000;
+    @include mq(md) {
+      width: calc(80/1440)*100%;
+      height: calc(80/1440)*100%;
+      }
 }

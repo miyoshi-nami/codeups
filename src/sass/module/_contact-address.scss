@@ -17,6 +17,7 @@
   padding-top: rem(16);
   @include mq(md) {
     width: calc(273/440)*100%;
+    padding-top: rem(0);
     }
 }
 

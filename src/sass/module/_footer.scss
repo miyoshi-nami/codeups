@@ -6,19 +6,22 @@
   height: auto;
   padding-top: rem(48);
   padding-bottom: rem(40);
+  @include mq(md) {
+    padding-top: rem(80);
+  padding-bottom: rem(80);
+    }
 }
 
-.footer__icons{
-  display: flex;
-  padding-top: rem(18);
-}
-
-.footer__icons li:not(:first-child){
-  display: flex;
-  align-items: center;
-  padding-left: rem(15);
+.footer__nav{
+  @include mq(md) {
+    padding-top: rem(24);
+    }
 }
 
 .footer__copyright{
   padding-top: rem(40);
+  text-align: center;
+  @include mq(md) {
+    padding-top: rem(80);
+    }
 }

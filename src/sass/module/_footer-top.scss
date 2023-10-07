@@ -1,0 +1,17 @@
+@use "global" as *;
+
+.footer-top{
+display: flex;
+}
+
+
+.footer-top__icons{
+  display: flex;
+  padding-top: rem(18);
+}
+
+.footer-top__icons li:not(:first-child){
+  display: flex;
+  align-items: center;
+  padding-left: rem(15);
+}

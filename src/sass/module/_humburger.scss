@@ -4,53 +4,60 @@ $drawer-width: 32px; //ドロワーの幅
 $drawer-height: 1px; //ドロワー線の高さ
 $drawer-color: #fff; //ドロワー線の色
 
-.hamburger{
- z-index:9999;
+.hamburger {
+  z-index: 9999;
+  display: block;
+
+  @include mq(md) {
+    display: none;
+  }
 }
 
-.click-area{
+.click-area {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  cursor: pointer; /* カーソルをポインターに変更 */
-  opacity: 0; /* 透明に設定 */
+  cursor: pointer;
+  /* カーソルをポインターに変更 */
+  opacity: 0;
+  /* 透明に設定 */
 }
 
 .hamburger span {
- position: relative;
- display: block;
- height: $drawer-height;
- width: $drawer-width;
- background: $drawer-color;
- transition: ease .3s;
+  position: relative;
+  display: block;
+  height: $drawer-height;
+  width: $drawer-width;
+  background: $drawer-color;
+  transition: ease .3s;
 }
 
 .hamburger span:nth-child(1) {
- top: 0;
+  top: 0;
 }
 
 .hamburger span:nth-child(2) {
- top: 11px;
+  top: 11px;
 }
 
 .hamburger span:nth-child(3) {
- top: 22px;
+  top: 22px;
 }
 
 /*is-OPEN時の動き*/
 .hamburger.is-open span:nth-child(1) {
- top: 2px;
- transform: rotate(45deg);
+  top: 2px;
+  transform: rotate(45deg);
 }
 
 .hamburger.is-open span:nth-child(2) {
- transform: translateY(-50%);
- opacity: 0;
+  transform: translateY(-50%);
+  opacity: 0;
 }
 
 .hamburger.is-open span:nth-child(3) {
- top: 0px;
- transform: rotate(-45deg);
+  top: 0px;
+  transform: rotate(-45deg);
 }
