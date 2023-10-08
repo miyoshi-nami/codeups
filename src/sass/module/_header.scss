@@ -19,10 +19,18 @@
   justify-content: space-between;
 }
 
+.header__drawer{
+  padding: 0;
+}
+
 .logo{
   z-index: 9995;
   width: rem(102);
   @include mq(md){
     width: rem(133);
   }
+}
+
+.header__pc-nav{
+  margin-left: auto;
 }

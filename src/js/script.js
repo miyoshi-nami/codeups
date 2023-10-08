@@ -13,6 +13,19 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   });
 
 
+  // ページ内リンクがクリックされたときの処理
+  $('#menu a').on('click', function (event) {
+    // href属性の値を取得
+    var href = $(this).attr('href');
+
+    // href属性の値が # で始まる場合に処理を実行
+    if (href.startsWith('#')) {
+      // ドロワーメニューを非表示にする処理を追加
+      $('.js-drawer-menu').fadeOut();
+      // ドロワーメニューのトグルボタンのis-openクラスを削除
+      $('.js-hamburger').removeClass('is-open');
+    }
+  });
 
   //slick1のスライダー
   $(".slider1")
@@ -55,8 +68,8 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     dots: false,
     swipe: true,
     variableWidth: true,
-    prevArrow: false,
-    nextArrow: false,
+    prevArrow: $('.custom-prev-arrow'),
+    nextArrow: $('.custom-next-arrow'),
     infinite: false,// ループ再生を無効にする
   });
 

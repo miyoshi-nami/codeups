@@ -2,6 +2,7 @@
 
 .title{
   display: block;
+  width: calc(248/375)*100%;
 }
 
 .title__main {
@@ -14,7 +15,6 @@
   @include mq("md"){
     font-weight: $normal;
     font-size: rem(80);
-    letter-spacing: 0.54;
   }
 }
 
