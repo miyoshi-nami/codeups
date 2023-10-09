@@ -1,10 +1,12 @@
 @use "global" as *;
 
-.sublist{
-  
-}
+.sublist {}
 
-.sublist__item{
-  padding-top: rem(19);
+.sublist__item {
+  padding-top: rem(17);
   font-weight: $regular;
+
+  @include mq("md") {
+    padding-top: rem(19);
+  }
 }

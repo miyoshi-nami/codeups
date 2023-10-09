@@ -11,7 +11,8 @@
   font-weight: $normal;
   line-height: calc(40/32);
   font-size: rem(32);
-  @include mq("md"){
+
+  @include mq("md") {
     font-size: rem(40);
   }
 }
@@ -28,29 +29,38 @@
   font-weight: $normal;
   line-height: calc(40/32);
   font-size: rem(32);
-  @include mq("md"){
+
+  @include mq("md") {
     font-size: rem(40);
     color: $white;
-}}
+  }
+}
 
 .section-header__title--blog::first-letter {
   color: $green-accent;
   text-transform: capitalize;
-  @include mq("md"){
-    color: $white;
-}}
 
-.section-header__title--contact::first-letter{
+  @include mq("md") {
+    color: $white;
+  }
+}
+
+.section-header__title--contact::first-letter {
   color: $green-accent;
 }
 
-.section-header__title--contact{
+.section-header__title--contact {
   text-transform: capitalize;
   color: $green;
   font-family: $en-font-family;
   font-weight: $normal;
-  line-height: 1;
+  line-height: 0.8;
+  padding-top: rem(10);
   font-size: rem(80);
+
+  @include mq("md") {
+    padding-top: rem(0);
+  }
 }
 
 .section-header__subtitle {
@@ -68,12 +78,13 @@
   line-height: calc(18/12);
   font-size: rem(12);
   text-align: center;
-  @include mq("md"){
+
+  @include mq("md") {
     color: $white;
-}
+  }
 }
 
-.section-header__text{
+.section-header__text {
   font-family: $jp2-font-family;
   color: $green-accent;
   line-height: calc(18/14);

@@ -8,7 +8,7 @@
 
 .list__items:not(:first-child){
   @include mq(md) {
-    margin-left: rem(120);
+    margin-left: rem(140);
     }
 }
 

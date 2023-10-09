@@ -10,9 +10,15 @@
 .column__left {
   width: 50%; /* カラムの幅を設定 */
   padding-left: rem(10);
+  @include mq("md"){
+    padding-left: rem(16);
+  }
 }
 
 .column__right {
   padding-left: rem(20);
   width: 50%; /* カラムの幅を設定 */
+  @include mq("md"){
+    padding-left: rem(32);
+  }
 }

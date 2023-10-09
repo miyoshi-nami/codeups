@@ -11,6 +11,10 @@
 
 .campaign__items {
   padding-top: rem(30);
+
+  @include mq("md") {
+    padding-left: rem(1);
+  }
 }
 
 .campaign__button {

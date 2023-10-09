@@ -4,7 +4,7 @@
   color: $white;
   width: 100%;
   height: auto;
-  padding-top: rem(48);
+  padding-top: rem(60);
   padding-bottom: rem(40);
   @include mq(md) {
     padding-top: rem(80);
@@ -19,7 +19,7 @@
 }
 
 .footer__copyright{
-  padding-top: rem(40);
+  padding-top: rem(20);
   text-align: center;
   @include mq(md) {
     padding-top: rem(80);

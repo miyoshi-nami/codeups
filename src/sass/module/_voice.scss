@@ -13,7 +13,7 @@
   @include mq(md) {
     display: block;
     position: absolute;
-    top: rem(20);
+    top: 0;
     left: calc(100/1440)*100%;
     width: calc(301/1440)*100%;
     height: auto;
@@ -31,7 +31,7 @@
   @include mq(md) {
     display: block;
     position: absolute;
-    top: rem(438+43);
+    top: rem(438+105);
     right: rem(25);
     width: calc(71/1130)*100%;
     height: auto;
@@ -43,6 +43,7 @@
 
   @include mq(md) {
     display: flex;
+    padding-top: rem(35);
   }
 }
 

@@ -29,6 +29,6 @@
   right: 0;
   height: 100%;
   @include mq(md) {
-    width: calc((calc(180/472)*100%) - rem(16) * 1 / 2);
+    width: calc(180/472)*100%;
   }
 }

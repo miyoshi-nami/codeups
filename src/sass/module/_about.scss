@@ -8,4 +8,7 @@
 
 .about__items{
   padding-top: rem(26);
+  @include mq("md"){
+    padding-top: rem(31);
+  }
 }

@@ -16,7 +16,7 @@
   @include mq(md) {
     display: block;
     position: absolute;
-    bottom: rem(60);
+    bottom: rem(70);
     left: calc(100/1440)*100%;
     width: calc(437/1440)*100%;
     height: auto;
@@ -24,7 +24,7 @@
 }
 
 .price__items {
-  padding-top: rem(27);
+  padding-top: rem(33);
 }
 
 .price__button {

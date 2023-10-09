@@ -7,6 +7,10 @@
 
 .card--voice__inner {
   padding: rem(16) rem(16) rem(24);
+
+  @include mq("md") {
+    padding: rem(24);
+  }
 }
 
 .card--voice__title {
@@ -16,19 +20,26 @@
   border-bottom: 1px solid $green-accent;
   /* 線のスタイルと色を指定 */
   padding-bottom: 5px;
+
   /* タイトルと線の間隔を調整 */
-  @include mq("md"){
+  @include mq("md") {
     font-size: rem(24);
-}}
+  }
+}
 
 .card--voice__body {
   padding-top: rem(16);
+
+  @include mq("md") {
+    padding-top: rem(40);
+  }
 }
 
 .card--voice__img {
   width: 100%;
   padding-top: 77.483444%; //117/151*100%
   position: relative;
+
   @include mq(md) {
     padding-top: calc(140/180)*100%;
   }

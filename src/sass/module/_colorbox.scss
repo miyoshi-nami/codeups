@@ -1,9 +1,10 @@
 @use "global" as *;
 
-.colorbox{
+.colorbox {
   position: relative;
 }
-.colorbox .color{
+
+.colorbox .color {
   position: absolute;
   top: 0;
   left: 0;
@@ -12,7 +13,8 @@
   z-index: 2;
   background-color: #408F95;
 }
-.colorbox img{
+
+.colorbox img {
   display: block;
   width: 100%;
 }

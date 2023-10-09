@@ -20,6 +20,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @include mq("md"){
+    padding: 0 rem(40);
+  }
 }
 
 .header__drawer{

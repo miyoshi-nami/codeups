@@ -7,6 +7,9 @@
 
 .card__inner {
   padding: rem(16);
+  @include mq("md"){
+    padding:  rem(24) rem(16);
+  }
 }
 
 .card__title {
@@ -26,6 +29,10 @@
   color: $green-accent;
   border: 1px solid $green-accent;
   padding: rem(5) rem(10);
+  @include mq("md"){
+    padding: rem(6) rem(16);
+    line-height: calc(22/12);
+  }
 }
 
 .card__title--campaign{
@@ -44,6 +51,9 @@
   padding-top: rem(8);
   font-size: rem(14);
   line-height: calc(24/14);
+  @include mq("md"){
+    padding-top: rem(16);
+  }
 }
 
 .card__text {
