@@ -9,7 +9,7 @@
 .contact__img {
   position: absolute;
   top: rem(54);
-  right: rem(25);
+  right: rem(17);
   width: calc(109/375)*100%;
 
   @include mq(md) {

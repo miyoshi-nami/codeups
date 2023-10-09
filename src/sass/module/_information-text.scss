@@ -9,21 +9,21 @@
 }
 
 .information-text__title {
-  padding-top: rem(40);
+  padding-top: rem(32);
   padding-bottom: rem(4);
   text-align: left;
   font-family: $jp1-font-family;
   font-size: rem(20);
   font-weight: $bold;
   color: $green;
-  letter-spacing: rem(calc(20/24));
+  letter-spacing: rem(calc(20/140));
   line-height: 1;
   border-bottom: 1px solid $green-accent;
 }
 
 .information-text__text {
-  padding-top: rem(16);
+  padding-top: rem(9);
   text-align: left;
   font-weight: $regular;
-  letter-spacing: rem(calc(24/16));
+  letter-spacing: rem(calc(24/345));
 }

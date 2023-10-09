@@ -20,7 +20,7 @@
 }
 
 .card-list--voice__item:not(:last-child){
-  margin-bottom: rem(40);
+  margin-bottom: rem(37);
   @include mq(md) {
     margin-bottom: 0;
   }

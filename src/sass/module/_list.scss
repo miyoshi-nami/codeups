@@ -13,7 +13,7 @@
 }
 
 .list__item {
-  margin-top: rem(40);
+  margin-top: rem(35);
   position: relative; /* 相対的な位置指定 */
   font-weight: $bold;
   @include mq(md) {
@@ -23,7 +23,7 @@
 
 .list__item:not(:first-child){
   @include mq(md) {
-    margin-top: rem(40);
+    margin-top: rem(30);
     }
 }
 
@@ -37,9 +37,4 @@
   background-image: url(../images/common/hitode.png);
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.sublist__item{
-  padding-top: rem(24);
-  font-weight: $regular;
 }

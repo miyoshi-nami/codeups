@@ -20,15 +20,14 @@
   font-size: rem(40);
   font-weight: $regular;
   color: $green-accent;
-  letter-spacing: 1;
-  line-height: rem(calc(40/40));
+  line-height: (calc(40/40));
 
   @include mq("md") {
     width: fit-content;
     padding-top: 0;
     color: $white;
     font-size: rem(80);
-    line-height: rem(calc(100/80));
+    line-height: (calc(100/80));
   }
 }
 

@@ -15,7 +15,7 @@
   line-height: calc(24/16);
   border-bottom: 1px solid $green-accent;
   /* 線のスタイルと色を指定 */
-  padding-bottom: 5px;
+  padding-bottom: rem(3);
   /* タイトルと線の間隔を調整 */
 }
 
@@ -59,7 +59,7 @@
 }
 
 .card__body {
-  padding-top: rem(24);
+  padding-top: rem(17);
 }
 
 .card__img {

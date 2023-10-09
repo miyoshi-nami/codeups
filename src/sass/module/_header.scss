@@ -9,6 +9,9 @@
   background-color: rgba($color: $green, $alpha: 0.68);
   height: rem(80);
   z-index: 999;
+  @include mq("md"){
+    height: rem(90);
+  }
 }
 
 .header__inner{

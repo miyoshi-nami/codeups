@@ -12,7 +12,7 @@
 
 .section__about {
   padding-top: rem(40);
-  padding-bottom: rem(40);
+  padding-bottom: rem(80);
 
   @include mq("md") {
     padding-top: rem(140);
@@ -21,8 +21,8 @@
 }
 
 .section__information {
-  padding-top: rem(40);
-  padding-bottom: rem(40);
+  padding-top: rem(80);
+  padding-bottom: rem(80);
 
   @include mq("md") {
     padding-top: rem(140);
@@ -31,7 +31,7 @@
 }
 
 .section__blog {
-  padding-top: rem(40);
+  padding-top: rem(65);
   padding-bottom: rem(40);
 
   @include mq("md") {
@@ -41,8 +41,8 @@
 }
 
 .section__voice {
-  padding-top: rem(40);
-  padding-bottom: rem(40);
+  padding-top: rem(30);
+  padding-bottom: rem(80);
 
   @include mq("md") {
     padding-top: rem(140);
@@ -51,8 +51,8 @@
 }
 
 .section__price {
-  padding-top: rem(40);
-  padding-bottom: rem(40);
+  padding-top: rem(80);
+  padding-bottom: rem(80);
 
   @include mq("md") {
     padding-top: rem(140);
@@ -62,7 +62,7 @@
 
 .section__contact {
   padding-top: rem(80);
-  padding-bottom: rem(40);
+  padding-bottom: rem(100);
 
   @include mq("md") {
     padding-top: rem(140);

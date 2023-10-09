@@ -1,0 +1,10 @@
+@use "global" as *;
+
+.sublist{
+  
+}
+
+.sublist__item{
+  padding-top: rem(19);
+  font-weight: $regular;
+}

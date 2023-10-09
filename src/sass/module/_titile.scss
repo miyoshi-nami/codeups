@@ -1,8 +1,13 @@
 @use "global" as *;
 
-.title{
+.title {
   display: block;
   width: calc(248/375)*100%;
+
+  @include mq("md") {
+    width: calc(496/1440)*100%;
+    text-align: center;
+  }
 }
 
 .title__main {
@@ -12,7 +17,8 @@
   color: $white;
   letter-spacing: 0.54em;
   font-family: $en2-font-family;
-  @include mq("md"){
+
+  @include mq("md") {
     font-weight: $normal;
     font-size: rem(80);
   }
