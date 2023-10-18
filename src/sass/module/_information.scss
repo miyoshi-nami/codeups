@@ -6,6 +6,10 @@
   background-color: $green2;
 }
 
+.information__inner{
+  max-width: rem(600);
+}
+
 .information__items{
   padding-top: rem(30);
 }

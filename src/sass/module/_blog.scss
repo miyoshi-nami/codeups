@@ -8,8 +8,11 @@
   @include mq(md) {
     background-image: url(../images/common/Rectangle03.jpg);
     background-repeat: no-repeat;
-    background-size: 100% calc(831/1440)*100%; //パディングによる
+    background-size: contain;
+    background-position: top center;
     width: 100%;
+    // height: calc(500/1440)*100%;
+    height: 100%;
   }
 }
 
@@ -20,8 +23,9 @@
     display: block;
     position: absolute;
     top: rem(24);
-    left: rem(100);
+    left: max(rem(100),7vw);
     width: calc(377/1440)*100%;
+    max-width: rem(377);
   }
 }
 
@@ -48,7 +52,11 @@
 
 .blog__inner {
   padding: rem(16) rem(16) rem(24);
-  max-width: rem(1079);
+  max-width: rem(600);
   width: 100%;
   margin: auto;
+
+  @include mq("md") {
+    max-width: rem(1079);
+  }
 }

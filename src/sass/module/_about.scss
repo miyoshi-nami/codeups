@@ -6,6 +6,10 @@
   overflow: hidden;
 }
 
+.about__inner{
+  max-width: rem(600);
+}
+
 .about__items{
   padding-top: rem(26);
   @include mq("md"){

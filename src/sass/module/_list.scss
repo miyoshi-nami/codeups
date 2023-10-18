@@ -14,8 +14,12 @@
 
 .list__item {
   margin-top: rem(35);
-  position: relative; /* 相対的な位置指定 */
+  padding-left: rem(20);
   font-weight: $bold;
+  background-image: url(../images/common/hitode.png);
+  background-repeat: no-repeat;
+  background-size: rem(18);
+  background-position: 0 rem(5);
   @include mq(md) {
     margin-top: rem(0);
     }
@@ -27,14 +31,6 @@
     }
 }
 
-.list__item::before {
-  content: "";
-  position: absolute;
-  top: 0%;
-  left: -15%; /* 左端からはみ出させる */
-  width: rem(18); /* 画像の幅を調整 */
-  height: rem(18); /* 画像の高さを調整 */
-  background-image: url(../images/common/hitode.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+.list__item a:hover {
+  opacity: 0.5;
 }

@@ -3,38 +3,45 @@
 .voice {
   display: block;
   text-align: center;
+
   @include mq(md) {
     position: relative;
   }
 }
 
-.voice__img--left{
+
+.voice__inner {
+  max-width: rem(600);
+
+  @include mq(md) {
+    // position: relative;
+  }
+}
+
+.voice__img--left {
   display: none;
+
   @include mq(md) {
     display: block;
     position: absolute;
     top: 0;
-    left: calc(100/1440)*100%;
+    left: min(calc(100/1440)*100%, 7vw);
     width: calc(301/1440)*100%;
     height: auto;
+    max-width: rem(301);
   }
 }
 
-.voice__inner{
-  @include mq(md) {
-    position: relative;
-  }
-}
-
-.voice__img--right{
+.voice__img--right {
   display: none;
+
   @include mq(md) {
-    display: block;
-    position: absolute;
-    top: rem(438+105);
-    right: rem(25);
+    display: flex;
+    margin-left: auto;
+    padding-top: rem(20);
     width: calc(71/1130)*100%;
     height: auto;
+
   }
 }
 
@@ -51,6 +58,6 @@
   padding-top: rem(40);
 
   @include mq("md") {
-    padding-top: rem(80);
+    margin-top: rem(-150);
   }
 }

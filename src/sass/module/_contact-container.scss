@@ -14,9 +14,9 @@
   padding: 0 rem(20);
   @include mq(md) {
     position: absolute;
-    left: calc(24/522)*100%;
-    top: 50%;
-    transform: translateY(-50%);
+    left: calc(27/522)*100%;
+    top: rem(70);
+    transform: translateY(0);
     // padding: 0 rem(calc(80/522)*100) 0 0;
     padding: 0 rem(80) 0 0;
     width: calc(522/1080)*100%;
@@ -29,7 +29,7 @@
   @include mq(md) {
     position: absolute;
     right: calc(115/1080)*100%;
-    top: 50%;
+    top: 48%;
     transform: translateY(-50%);
     padding-top: 0;
     }

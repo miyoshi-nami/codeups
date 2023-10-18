@@ -6,6 +6,7 @@
 
   @include mq("md") {
     display: block;
+    height: inherit;
   }
 }
 
@@ -22,6 +23,7 @@
   height: inherit;
   text-align: center;
 }
+
 
 .pc-nav__item:not(:first-child) {
  
