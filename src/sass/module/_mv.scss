@@ -6,8 +6,9 @@
 
 .mv img{
   height: 100vh;
+  object-fit: cover;
   @include mq("md"){
-    height: calc(768/1440)*100%;
+    // height: calc(768/1440)*100%;
   }
 }
 

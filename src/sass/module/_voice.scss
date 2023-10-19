@@ -50,6 +50,7 @@
 
   @include mq(md) {
     display: flex;
+    flex-wrap: wrap;
     padding-top: rem(35);
   }
 }

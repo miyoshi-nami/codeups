@@ -14,7 +14,9 @@
   background-color: #408F95;
 }
 
-.colorbox img {
+.colorbox picture {
   display: block;
   width: 100%;
+  height: inherit;
+  object-fit: cover;
 }

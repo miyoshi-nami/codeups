@@ -3,19 +3,42 @@
 .price-item {
   @include mq(md) {
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
+    padding-top: calc(746/1080)*100%;
+    position: relative;
   }
 }
 
 .price-item__img {
   @include mq(md) {
     width: calc(492/1080)*100%;
-    order: 2;
+    // width: calc(50%-93px/2);
+    // order: 2;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(492/1080)*100%;
+    height: 100%;
+    // padding-top: calc(492/746)*100%;
+    // padding-left: rem(93);
+  }
+}
+
+.price-item__img picture {
+  @include mq("md"){
+    object-fit: cover;
+    // position: absolute;
+    // top: 50%;
+    // right: 0;
+    // transform: translateY(-50%);
   }
 }
 
 .price-item__left {
   @include mq(md) {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: calc(492/1080)*100%;
     order: 1;
   }
