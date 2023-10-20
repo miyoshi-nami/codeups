@@ -38,7 +38,7 @@
   }
 }
 
-.card-list--voice__item:nth-of-type(n+3) {
+.card-list--voice__item:nth-child(n+3) {
   @include mq(md) {
     margin-top: rem(25);
   }

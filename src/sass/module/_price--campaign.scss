@@ -11,7 +11,7 @@ justify-content: center;
   font-size: rem(32);
   font-weight: $bold;
   color: $green-accent;
-  font-family: $en-font-family;
+  font-family: $en2-font-family;
   @include mq("md"){
     font-size: rem(40);
     letter-spacing: -0.08rem;
@@ -26,6 +26,7 @@ justify-content: center;
 .price--campaign__small span {
   display: block;
   align-items: center;
+  font-family: $en2-font-family;
   font-size: rem(20);
   color: $green;
   @include mq("md"){

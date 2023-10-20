@@ -1,15 +1,17 @@
 @use "global" as *;
 
-.gotop{
-    display: block;
-    width: calc(48/375)*100%;
-    height: calc(48/375)*100%;
-    position: fixed;
-    bottom: rem(20);
-    right: rem(20);
-    z-index: 10000;
-    @include mq(md) {
-      width: calc(80/1440)*100%;
-      height: calc(80/1440)*100%;
-      }
+.gotop {
+  display: block;
+  width: rem(46);
+  height: rem(46);
+  position: fixed;
+  bottom: calc(20/1180)*100%;
+  right: calc(20/1040)*100%;
+  z-index: 10000;
+
+  @include mq(md) {
+    width: rem(80);
+    height: rem(80);
+    fill: brightness(0.7) invert(1);
+  }
 }

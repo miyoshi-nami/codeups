@@ -18,8 +18,9 @@
 
   @include mq(md) {
     width: calc(301/1440)*100%;
-    top: rem(100);
-    right: rem(50);
+    max-width: rem(301);
+    top: rem(-50);
+    left: min(87.34%,74vw);
   }
 }
 

@@ -68,8 +68,10 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     dots: false,
     swipe: true,
     variableWidth: true,
-    prevArrow: $('.custom-prev-arrow'),
-    nextArrow: $('.custom-next-arrow'),
+    // prevArrow: $('.custom-prev-arrow'),
+    // nextArrow: $('.custom-next-arrow'),
+    prevArrow: '<img src="./assets/images/common/arrow-l.png" class="slide-arrow arrow__prev" alt="左矢印" >',
+    nextArrow: '<img src="./assets//images/common/arrow-r.png" class="slide-arrow arrow__next" alt="右矢印" >',
     infinite: false,// ループ再生を無効にする
   });
 
@@ -97,5 +99,28 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         counter = 1;
       }
     });
+  });
+
+  //pagetop
+$(function() {
+  var topBtn = $('.gotop');    
+  topBtn.hide();
+  //スクロールが100に達したらボタン表示
+  $(window).scroll(function () {
+  if ($(this).scrollTop() > 100) {
+  //ボタンの表示方法
+  topBtn.fadeIn();
+  } else {
+  //ボタンの非表示方法
+  topBtn.fadeOut();
+  }
+  });
+  //スクロールしてトップ
+  topBtn.click(function () {
+  $('body,  html').animate({
+  scrollTop: 0
+  },   500);
+  return false;
+  });
   });
 });

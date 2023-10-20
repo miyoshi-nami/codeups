@@ -20,9 +20,10 @@
   @include mq(md) {
     display: block;
     position: absolute;
-    bottom: rem(70);
-    left: calc(100/1440)*100%;
+    bottom: rem(-120);
+    left: min(calc-(100/1440)*100%,2vw);
     width: calc(437/1440)*100%;
+    max-width: rem(437);
     height: auto;
   }
 }
