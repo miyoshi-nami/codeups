@@ -12,7 +12,7 @@
 
 .voice__items-container{
   @include mq(md) {
-    width: rem(1080);
+    max-width: 100%;
     position: relative;
   }
 }

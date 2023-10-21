@@ -4,6 +4,11 @@
   display: inline-block;
 }
 
+.icon li{
+  display: flex;
+  align-items: center;
+}
+
 .icon__facebook {
   width: rem(24);
   /* 画像の幅を調整 */

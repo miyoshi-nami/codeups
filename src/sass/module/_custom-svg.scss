@@ -1,0 +1,10 @@
+@use "global" as *;
+
+
+.custom-svg{
+  stroke: $green-accent;
+}
+
+.custom-svg--white{
+  stroke: $white;
+}
