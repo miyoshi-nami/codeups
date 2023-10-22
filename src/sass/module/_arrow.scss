@@ -1,25 +1,29 @@
 @use "global" as *;
 
 
-.arrow{
-  
-}
+.arrow {}
 
 .arrow__prev {
-  position: absolute;
-  top: rem(-100);
-  left: 48%;
-  transform: translateX(-50%);
-  width: rem(80);
-  height: rem(80);
-  object-fit: cover;
+  @include mq("md") {
+    position: absolute;
+    top: rem(-100);
+    left: max(calc(600/1440)*100%,66vw);
+    transform: translateX(-50%);
+    width: rem(80);
+    height: rem(80);
+    object-fit: cover;
+  }
+
 }
 
 .arrow__next {
-  position: absolute;
-  top: rem(-100);
-  left: 56%;
-  transform: translateX(-50%);
-  width: rem(80);
-  height: rem(80);
+  
+  @include mq("md") {
+    position: absolute;
+    top: rem(-100);
+    left: min(74.5%,71vw);
+    transform: translateX(-50%);
+    width: rem(80);
+    height: rem(80);
+  }
 }

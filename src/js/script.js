@@ -49,7 +49,17 @@ jQuery(function ($) {
     prevArrow: '<img src="./assets/images/common/arrow-l.png" class="slide-arrow arrow__prev" alt="左矢印" >',
     nextArrow: '<img src="./assets/images/common/arrow-r.png" class="slide-arrow arrow__next" alt="右矢印" >',
     infinite: false,
+    responsive: [
+      {
+        breakpoint: 768, // スマートフォンの幅を考慮したブレイクポイント
+        settings: {
+          arrows: false // スマートフォンの場合に矢印を非表示にする
+        }
+      }
+    ]
   });
+
+
 
   // 要素の取得とスピードの設定
   $('.colorbox').each(function () {
@@ -74,20 +84,21 @@ jQuery(function ($) {
   // pagetop
   var topBtn = $('.gotop');
   topBtn.hide();
+
+  var showButtonPosition = 200; // ボタンを表示するスクロール位置（ピクセル数）
+
   $(window).scroll(function () {
-    if ($(this).scrollTop() > 100) {
+    var scrollPosition = $(window).scrollTop();
+
+    // メインビューから一定のスクロール位置までボタンを表示
+    if (scrollPosition > showButtonPosition) {
       topBtn.fadeIn();
     } else {
       topBtn.fadeOut();
     }
   });
 
-  topBtn.click(function () {
-    $('body, html').animate({
-      scrollTop: 0
-    }, 500);
-    return false;
-  });
+
 
   // ページを読み込んだ際の処理
   $(window).on('load', function () {
@@ -95,13 +106,13 @@ jQuery(function ($) {
     var footerHeight = footer.outerHeight();
     var goToTopLink = $('#goToTop');
     var svgElement = goToTopLink.find('svg'); // SVG要素を取得
-  
+
     $(window).scroll(function () {
       var scrollPosition = $(window).scrollTop();
       var maxScrollPosition = scrollPosition + $(window).height();
       var footerTop = footer.offset().top;
       var footerBottom = footerTop + footerHeight;
-  
+
       if (maxScrollPosition >= footerTop && maxScrollPosition <= footerBottom) {
         // スクロール位置がフッターに差し掛かったらSVGのクラスを変更
         svgElement.removeClass('custom-svg').addClass('custom-svg--white');
@@ -111,5 +122,5 @@ jQuery(function ($) {
       }
     });
   });
-  
+
 });
