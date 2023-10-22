@@ -8,3 +8,12 @@
     padding-bottom: rem(5);
   }
 }
+
+.slick-track {
+  display: flex !important;
+  align-items: stretch;
+}
+
+.slick-slide {
+  height: auto !important;
+}
