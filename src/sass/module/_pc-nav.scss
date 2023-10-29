@@ -28,7 +28,7 @@
 .pc-nav__item:not(:first-child) {
  
   @include mq("md") {
-    padding-left: rem(40);
+    padding-left: min(rem(20));
   }
 }
 
