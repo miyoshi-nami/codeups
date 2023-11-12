@@ -1,71 +1,57 @@
 @use "global" as *;
 
 .section__campaign {
-  padding-top: rem(40);
-  padding-bottom: rem(40);
+  margin-top: rem(40);
 
   @include mq("md") {
-    padding-top: rem(120);
-    padding-bottom: rem(10);
+    margin-top: rem(120);
   }
 }
 
 .section__about {
-  padding-top: rem(40);
-  padding-bottom: rem(80);
+  margin-top: rem(160);
 
   @include mq("md") {
-    padding-top: rem(130);
-    padding-bottom: rem(140);
+    margin-top: rem(140);
   }
 }
 
 .section__information {
-  padding-top: rem(80);
-  padding-bottom: rem(80);
+  margin-top: rem(160);
 
   @include mq("md") {
-    padding-top: rem(100);
-    padding-bottom: rem(100);
+    margin-top: rem(140);
   }
 }
 
 .section__blog {
-  padding-top: rem(65);
-  padding-bottom: rem(40);
+  margin-top: rem(160);
 
   @include mq("md") {
-    padding-top: rem(80);
-    padding-bottom: 0;
+    margin-top: rem(140);
   }
 }
 
 .section__voice {
-  padding-top: rem(30);
-  padding-bottom: rem(80);
+  margin-top: rem(160);
 
   @include mq("md") {
-    padding-top: rem(105);
-    padding-bottom: rem(140);
+    margin-top: rem(140);
   }
 }
 
 .section__price {
-  padding-top: rem(78);
-  padding-bottom: rem(78);
+  margin-top: rem(160);
 
   @include mq("md") {
-    padding-top: rem(95);
-    padding-bottom: rem(113);
+    margin-top: rem(140);
   }
 }
 
 .section__contact {
-  padding-top: rem(80);
-  padding-bottom: rem(100);
+  margin-top: rem(160);
 
   @include mq("md") {
-    padding-top: rem(139);
-    padding-bottom: rem(150);
+    margin-top: rem(140);
   }
 }

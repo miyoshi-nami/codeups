@@ -7,24 +7,28 @@
   background-color: $white;
 }
 
-.card::before {
-  position:absolute;
-  top:0;
-  left:0;
-  display:block;
-  width:100%;
-  height:100%;
-  content:"";
-  box-shadow:inset 0 2px 5px rgba(0, 0, 0, 0.3);
-}
+// .card::before {
+//   position:absolute;
+//   top:0;
+//   left:0;
+//   display:block;
+//   width:100%;
+//   height:100%;
+//   content:"";
+//   box-shadow:inset 0 2px 5px rgba(0, 0, 0, 0.3);
+// }
 
 .card:hover {
-  box-shadow:0 2px 5px rgba(0, 0, 0, 0.3);
-  transform:scale(1.02);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transform: scale(1.02);
+  transition: 500ms;
 }
 
 .card__inner {
   padding: rem(16);
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 
   @include mq("md") {
     padding: rem(24) rem(16);
@@ -64,21 +68,21 @@
 }
 
 .card__price {
-  padding-top: rem(3);
+  margin-top: rem(3);
 }
 
 .card__subtitle {
-  padding-top: rem(8);
+  margin-top: rem(8);
   font-size: rem(14);
   line-height: calc(24/14);
 
   @include mq("md") {
-    padding-top: rem(16);
+    margin-top: rem(16);
   }
 }
 
 .card__text {
-  padding-top: rem(16);
+  margin-top: rem(16);
   font-size: rem(16);
   line-height: calc(24/16);
 }

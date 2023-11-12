@@ -48,7 +48,6 @@ jQuery(function ($) {
     variableWidth: true,
     prevArrow: '<img src="./assets/images/common/arrow-l.png" class="slide-arrow arrow__prev" alt="左矢印" >',
     nextArrow: '<img src="./assets/images/common/arrow-r.png" class="slide-arrow arrow__next" alt="右矢印" >',
-    infinite: false,
     responsive: [
       {
         breakpoint: 768, // スマートフォンの幅を考慮したブレイクポイント
@@ -121,6 +120,17 @@ jQuery(function ($) {
         svgElement.removeClass('custom-svg--white').addClass('custom-svg');
       }
     });
+  });
+
+  window.addEventListener('load', function() {
+    var maxHeight = 0;
+    $('.card__subtitle').each(function(idx, elem) {
+      var height = $(elem).height();
+      if(maxHeight < height) {
+        maxHeight = height;
+      }
+    });
+    $('.card__subtitle').height(maxHeight);
   });
 
 });

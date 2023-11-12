@@ -24,11 +24,17 @@
   text-align: center;
 }
 
-
-.pc-nav__item:not(:first-child) {
- 
+.pc-nav__item a {
   @include mq("md") {
-    padding-left: min(rem(20));
+    padding-left: min(rem(10));
+    padding-right: min(rem(10));
+  }
+}
+
+.pc-nav__item a :last-child {
+
+  @include mq("md") {
+    padding-right: min(rem(0));
   }
 }
 

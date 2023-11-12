@@ -2,7 +2,7 @@
 
 .title {
   display: block;
-  width: calc(248/375)*100%;
+  // width: calc(248/375)*100%;
 
   @include mq("md") {
     // width: calc(496/1440)*100%;
@@ -16,12 +16,14 @@
   font-weight: $regular;
   color: $white;
   letter-spacing: 0.54em;
+  text-indent: rem(20);
   font-family: $en2-font-family;
   text-align: center;
 
   @include mq("md") {
     font-weight: $normal;
     font-size: rem(80);
+    text-indent: rem(50);
   }
 }
 

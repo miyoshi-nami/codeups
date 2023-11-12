@@ -4,6 +4,7 @@
 display: flex;
 align-items: baseline;
 justify-content: center;
+margin-top: auto;
 }
 
 .price--campaign__big {
@@ -12,6 +13,7 @@ justify-content: center;
   font-weight: $bold;
   color: $green-accent;
   font-family: $en2-font-family;
+
   @include mq("md"){
     font-size: rem(40);
     letter-spacing: -0.08rem;
@@ -29,6 +31,7 @@ justify-content: center;
   font-family: $en2-font-family;
   font-size: rem(20);
   color: $green;
+  margin-top: auto;
   @include mq("md"){
     font-size: rem(24);
     letter-spacing: -0.08;
