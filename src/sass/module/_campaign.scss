@@ -2,7 +2,6 @@
 
 .campaign {
   display: block;
-  text-align: center;
 
   @include mq("md") {
     overflow: hidden;
@@ -24,6 +23,7 @@
 .campaign__button {
   margin-top: rem(37);
   padding-right: rem(5);
+  text-align: center;
 
   @include mq("md") {
     margin-top: rem(80);

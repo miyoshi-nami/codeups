@@ -3,7 +3,7 @@
 .about{
   display: block;
   overflow: hidden;
-  position: relative;
+  // position: relative;
 }
 
 .about__inner{
@@ -11,8 +11,8 @@
 }
 
 .about__items{
-  padding-top: rem(26);
-  @include mq("md"){
-    padding-top: rem(31);
-  }
+  // padding-top: rem(26);
+  // @include mq("md"){
+  //   padding-top: rem(31);
+  // }
 }
