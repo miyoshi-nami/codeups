@@ -11,8 +11,9 @@
 }
 
 .about__items{
+  margin-top: rem(27);
   // padding-top: rem(26);
-  // @include mq("md"){
-  //   padding-top: rem(31);
-  // }
+  @include mq("md"){
+    margin-top:  rem(0);
+  }
 }

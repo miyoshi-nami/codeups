@@ -8,10 +8,12 @@
   }
 }
 
-
 .footer-top__icons {
   display: flex;
-  padding-top: rem(8);
+  margin-top: rem(10);
+  @include mq("md"){
+    margin-top: rem(40);
+  }
 }
 
 .footer-top__icons li:not(:first-child) {

@@ -28,16 +28,16 @@
 }
 
 .contact-container__right {
-  padding-top: rem(40);
+  margin-top: rem(30);
   @include mq(md) {
     // position: absolute;
     // right: calc(115/1080)*100%;
     // top: 48%;
     // transform: translateY(-50%);
-    margin: 0 auto;
-    padding-top: 0;
+    margin-left: calc(81/1080)*100%;
+    margin-top: 0;
     width: calc(315/1080)*100%;
-    transform: translateY(50%);
+    transform: translateY(39%);
     height: 100%;
     }
 }

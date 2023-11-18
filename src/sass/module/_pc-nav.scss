@@ -26,8 +26,8 @@
 
 .pc-nav__item a {
   @include mq("md") {
-    padding-left: min(rem(10));
-    padding-right: min(rem(10));
+    padding-left: min(rem(20));
+    padding-right: min(rem(20));
   }
 }
 

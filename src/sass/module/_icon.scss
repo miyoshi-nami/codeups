@@ -4,19 +4,23 @@
   display: inline-block;
 }
 
-.icon li{
+.icon li {
   display: flex;
   align-items: center;
 }
 
 .icon__facebook {
-  width: rem(24);
-  /* 画像の幅を調整 */
-  height: rem(24);
-  /* 画像の高さを調整 */
   background-image: url(../images/common/FacebookLogo.png);
   background-repeat: no-repeat;
   background-size: cover;
+  width: rem(20);
+  height: rem(20);
+  @include mq("md") {
+    width: rem(35);
+    /* 画像の幅を調整 */
+    height: rem(35);
+    /* 画像の高さを調整 */
+  }
 }
 
 .icon__instagram {

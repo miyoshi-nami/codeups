@@ -9,27 +9,32 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  padding-bottom: rem(6);
+  padding-bottom: rem(3);
   border-bottom: 1px solid $green-accent;
+
+  @include mq("md") {
+    padding-bottom: rem(6);
+  }
 }
 
 .left-items--contact__img img {
   width: calc(174/295)*100%;
 
   @include mq(md) {
-    width: calc(200/(522 + 47))*100%;
+    width: 42.149385%;
   }
 }
 
 .left-items--contact__address {
   width: 100%;
   text-align: center;
-  padding-top: rem(13);
+  margin-top: rem(14);
 
   @include mq(md) {
     display: flex;
     width: 100%;
+    margin-top: rem(20);
     justify-content: space-between;
-    padding-top: rem(24);
+    // padding-top: rem(24);
   }
 }

@@ -1,38 +1,56 @@
 @use "global" as *;
 
-.list{
- 
+.list {
+
   @include mq(md) {
     display: flex;
-    }
+  }
 }
 
-.list__items:not(:first-child){
+.list__items {
+  margin-top: rem(30);
+
+  @include mq("md") {
+    margin-top: rem(0);
+  }
+}
+
+.list__items:first-child {
+  margin-top: rem(50);
+
+  @include mq("md") {
+    margin-top: rem(0);
+  }
+
+}
+
+.list__items:not(:first-child) {
   @include mq(md) {
-    margin-left: rem(140);
-    }
+    margin-left: rem(120);
+  }
 }
 
 .list__item {
-  margin-top: rem(35);
+  margin-top: rem(30);
   padding-left: rem(20);
   font-weight: $bold;
   background-image: url(../images/common/hitode.png);
   background-repeat: no-repeat;
   background-size: rem(18);
   background-position: 0 rem(5);
+
   @include mq(md) {
     margin-top: rem(0);
-    }
+  }
 }
 
-.list__item:not(:first-child){
+.list__item:not(:first-child) {
   @include mq(md) {
     margin-top: rem(30);
-    }
+  }
 }
 
-.list__item a{
+.list__item a {
   display: block;
 }
 

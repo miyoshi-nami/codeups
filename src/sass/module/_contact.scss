@@ -12,15 +12,15 @@
 
 .contact__img {
   position: absolute;
-  top: rem(54);
+  top: rem(-25);
   right: rem(17);
   width: calc(109/375)*100%;
 
   @include mq(md) {
     width: calc(301/1440)*100%;
     max-width: rem(301);
-    top: rem(-50);
-    left: min(87.34%,74vw);
+    top: rem(-53);
+    left: min(75.34%,77vw);
   }
 }
 
