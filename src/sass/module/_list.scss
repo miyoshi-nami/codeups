@@ -1,6 +1,7 @@
 @use "global" as *;
 
 .list{
+ 
   @include mq(md) {
     display: flex;
     }
@@ -29,6 +30,10 @@
   @include mq(md) {
     margin-top: rem(30);
     }
+}
+
+.list__item a{
+  display: block;
 }
 
 .list__item a:hover {

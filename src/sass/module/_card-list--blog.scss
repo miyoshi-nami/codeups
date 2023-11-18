@@ -1,11 +1,12 @@
 @use "global" as *;
 
 .card-list--blog {
-  display: block;
+  display: grid;
+  grid-row-gap: rem(40);
 
   @include mq(md) {
-    display: flex;
-    flex-wrap: wrap;
+    grid-gap: 40px;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -15,31 +16,32 @@
   /* ボックスシャドウの設定 */
 
   @include mq(md) {
-    max-width: calc(33.333% - rem(40) * 2 / 3);
+    // max-width: calc(33.333% - rem(40) * 2 / 3);
   }
 }
 
-.card-list--blog__item:not(:last-child) {
-  margin-bottom: rem(40);
-  @include mq(md) {
-    margin-bottom: 0;
-  }
-}
+// .card-list--blog__item:not(:last-child) {
+//   // margin-bottom: rem(40);
 
-.card-list--blog__item+.card-list--blog__item {
-  @include mq(md) {
-    margin-left: rem(40);
-  }
-}
+//   @include mq(md) {
+//     margin-bottom: 0;
+//   }
+// }
 
-.card-list--blog__item:nth-child(3n+1) {
-  @include mq(md) {
-    margin-left: 0;
-  }
-}
+// .card-list--blog__item+.card-list--blog__item {
+//   @include mq(md) {
+//     margin-left: rem(40);
+//   }
+// }
 
-.card-list--blog__item:nth-child(n+4) {
-  @include mq(md) {
-    margin-top: rem(25);
-  }
-}
+// .card-list--blog__item:nth-child(3n+1) {
+//   @include mq(md) {
+//     margin-left: 0;
+//   }
+// }
+
+// .card-list--blog__item:nth-child(n+4) {
+//   @include mq(md) {
+//     margin-top: rem(25);
+//   }
+// }

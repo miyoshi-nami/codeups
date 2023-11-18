@@ -1,19 +1,36 @@
 @use "global" as *;
 
 .blog {
-  position: relative;
+  // position: relative;
   display: block;
-  text-align: center;
+  // text-align: center;
 
   @include mq(md) {
-    background-image: url(../images/common/Rectangle03.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: top center;
+    // background-image: url(../images/common/Rectangle03.jpg);
+    // background-repeat: no-repeat;
+    // background-size: contain;
+    // background-position: top center;
+    // width: 100%;
+    // // height: calc(500/1440)*100%;
+    // height: 50%;
+
     width: 100%;
-    // height: calc(500/1440)*100%;
-    height: 100%;
+    /*要素の幅指定*/
+    // height: rem(831);
+    /*要素の高さ指定*/
+    background-color: white;
+    /*背景色指定*/
+    background-image: url(../images/common/Rectangle03.jpg);
+    /*背景画像を指定*/
+    background-repeat: no-repeat;
+    /*背景画像の繰り返しを解除*/
+    background-size: 100% rem(500);
+    /*背景画像のサイズ指定*/
   }
+}
+
+.blog__title {
+  position: relative;
 }
 
 .blog__img {
@@ -22,8 +39,8 @@
   @include mq(md) {
     display: block;
     position: absolute;
-    top: rem(24);
-    left: max(rem(100),7vw);
+    top: rem(-76);
+    left: max(-2%, -1vw);
     width: calc(377/1440)*100%;
     max-width: rem(377);
   }
@@ -34,29 +51,23 @@
 }
 
 .blog__items {
-  padding-top: rem(24);
-  text-align: left;
+  margin-top: rem(24);
+  // text-align: left;
 
   @include mq("md") {
-    padding-top: rem(79);
+    margin-top: rem(79);
   }
 }
 
 .blog__button {
-  padding-top: rem(40);
+  margin-top: rem(40);
+  text-align: center;
 
   @include mq("md") {
-    padding-top: rem(80);
+    margin-top: rem(80);
   }
 }
 
 .blog__inner {
-  padding: rem(16) rem(16) rem(24);
-  max-width: rem(600);
   width: 100%;
-  margin: auto;
-
-  @include mq("md") {
-    max-width: rem(1079);
-  }
 }

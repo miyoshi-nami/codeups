@@ -7,6 +7,10 @@
   background-color: $white;
 }
 
+.card--blog {
+  background-color: $white;
+}
+
 // .card::before {
 //   position:absolute;
 //   top:0;
@@ -25,14 +29,21 @@
 }
 
 .card__inner {
-  padding: rem(16);
+  padding: rem(16) rem(16) rem(24);
   flex-grow: 1;
   display: flex;
   flex-direction: column;
 
   @include mq("md") {
-    padding: rem(24) rem(16);
+    padding: rem(24) rem(16) rem(40);
   }
+}
+
+.card__inner--blog {
+  padding: rem(16) rem(16) rem(24);
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .card__title {

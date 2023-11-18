@@ -6,6 +6,9 @@
   @include mq("md") {
     width: calc(50% - rem(48));
     margin-left: rem(48);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 

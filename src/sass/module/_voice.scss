@@ -2,7 +2,7 @@
 
 .voice {
   display: block;
-  text-align: center;
+  // text-align: center;
 }
 
 
@@ -23,7 +23,7 @@
   @include mq(md) {
     display: flex;
     flex-wrap: wrap;
-    padding-top: rem(35);
+    margin-top: rem(-16);
   }
 }
 
@@ -33,9 +33,9 @@
   @include mq(md) {
     display: block;
     position: absolute;
-    top: rem(-110);
-    right: min(75%, 77vw);
-    width: calc(301/1440)*100%;
+    top: rem(-175);
+    right: min(80%, 77vw);
+    width: 29.902778%;
     height: auto;
     max-width: rem(301);
   }
@@ -45,9 +45,13 @@
   display: none;
 
   @include mq(md) {
-    display: flex;
-    margin-left: auto;
-    padding-top: rem(20);
+    // display: flex;
+    // margin-left: auto;
+    // padding-top: rem(20);
+    display: block;
+    position: absolute;
+    bottom: rem(-200);
+    right: 0;
     width: calc(71/1130)*100%;
     height: auto;
 
@@ -55,9 +59,9 @@
 }
 
 .voice__button {
-  padding-top: rem(40);
-
+ margin-top: rem(40);
+text-align: center;
   @include mq("md") {
-    margin-top: rem(-150);
+    margin-top: rem(80);
   }
 }

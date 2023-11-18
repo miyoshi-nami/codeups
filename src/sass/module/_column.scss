@@ -3,13 +3,11 @@
 .column {
   box-sizing: border-box; /* ボーダーボックスモデルを使用 */
   display: flex;
-  padding-left:rem(10);
 }
 
 /* ブロックの修飾子のスタイル */
 .column__left {
   width: 50%; /* カラムの幅を設定 */
-  padding-left: rem(10);
   @include mq("md"){
     padding-left: rem(16);
   }

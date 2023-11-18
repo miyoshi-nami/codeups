@@ -10,14 +10,15 @@
 
 .about-item__img {
   // padding-top: calc(212/345)*100%;
+  padding-top: 65%;
   background: url(../images/common/ocean01-pc.jpg), url(../images/common/ocean02-pc.jpg);
-  background-position: left top, right bottom;
+  background-position: left top, right (rem(26));
   background-repeat: no-repeat, no-repeat;
   background-size: calc(128/345)*100%, calc(281/345)*100%;
 
   @include mq("md") {
-    padding-top: 65%;
-    background-position: left top, right (top+rem(26));
+    padding-top: rem(0);
+    background-position: left top, right bottom;
     background-size: calc(400/1080)*100%, calc(880/1080)*100%;
   }
 }
@@ -53,7 +54,7 @@
     display: block;
     position: absolute;
     bottom: rem(-87);
-    left: min(77vw, 92%);
+    left: min(77vw, 91%);
     width: rem(194);
     height: auto;
   }

@@ -1,19 +1,23 @@
 @use "global" as *;
 
 .top {
-  padding-top: 40.936102%;
-  position: relative;
-  @include mq("md"){
-    padding-top: calc(140/472)*100%;
-}}
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  // padding-top: 40.936102%;
+  // position: relative;
+  // @include mq("md"){
+  //   padding-top: calc(140/472)*100%;
+// }
+}
 
 .top__left {
   display: block;
   width: 47.603834%;
   text-align: left;
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  // position: absolute;
+  // bottom: 0;
+  // left: 0;
   height: fit-content;
   @include mq(md) {
     width: calc((calc(276/472)*100%) - rem(16) * 1 / 2);
@@ -21,12 +25,12 @@
 }
 
 .top__right {
-  display: flex;
+  // display: flex;
   align-items: flex-end;
   width: 48.242812%;
-  position: absolute;
-  bottom: 0;
-  right: 0;
+  // position: absolute;
+  // bottom: 0;
+  // right: 0;
   height: 100%;
   @include mq(md) {
     width: calc(180/472)*100%;

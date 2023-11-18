@@ -28,28 +28,28 @@
 }
 
 .card--voice__body {
-  padding-top: rem(16);
+  margin-top: rem(16);
 
   @include mq("md") {
-    padding-top: rem(40);
+    margin-top: rem(40);
   }
 }
 
 .card--voice__img {
   width: 100%;
-  padding-top: 77.483444%; //117/151*100%
-  position: relative;
+  // padding-top: 77.483444%; //117/151*100%
+  // position: relative;
 
   @include mq(md) {
-    padding-top: calc(140/180)*100%;
+    // padding-top: calc(140/180)*100%;
   }
 }
 
 .card--voice__img img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  // position: absolute;
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
   width: 100%;
   height: 100%;
   object-fit: cover;
