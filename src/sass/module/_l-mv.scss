@@ -1,0 +1,27 @@
+@use "global" as *;
+
+.l-mv{
+  display: block;
+  width: 100%;
+  position: relative;
+  @include mq("md"){
+aspect-ratio: 1440/548;
+  }
+}
+
+.l-mv-img picture{
+  display: block;
+  height: 100%;
+  object-fit: cover;
+}
+
+.l-mv__title {
+  position: absolute;
+  z-index: 1;
+  top: 43%;
+  left: 50%;
+  transform: translateX(-50%);
+  @include mq("md"){
+    top: 46%;
+  }
+}
