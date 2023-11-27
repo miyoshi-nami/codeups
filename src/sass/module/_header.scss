@@ -40,3 +40,9 @@
 .header__pc-nav{
   margin-left: auto;
 }
+
+
+.header.headerColorScroll {
+  background-color: $green-accent;
+  transition: color 0.4s ease-out;
+}

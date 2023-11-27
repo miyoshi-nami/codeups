@@ -45,11 +45,11 @@
 }
 
 .price-item__text {
-  padding-top: rem(40);
+  margin-top: rem(40);
 }
 
 .price-item__text:first-child {
   @include mq(md) {
-    padding-top: rem(0);
+    margin-top: rem(0);
   }
 }

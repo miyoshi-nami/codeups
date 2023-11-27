@@ -13,6 +13,7 @@
 
   @include mq("md") {
     margin-top: rem(140);
+    // padding-bottom: rem(140);
     padding-bottom: rem(140);
   }
 }
@@ -23,8 +24,8 @@
   margin-top: rem(80);
 
   @include mq("md") {
-    padding-top: rem(100);
-    padding-bottom: rem(100);
+    padding-top: rem(95);
+    padding-bottom: rem(101);
     margin-top: rem(0);
   }
 }
@@ -53,7 +54,7 @@
 
   @include mq("md") {
     margin-top: rem(140);
-    padding-top: rem(100);
+    padding-top: rem(93);
     padding-bottom: rem(100);
   }
 }
@@ -62,6 +63,6 @@
   margin-top: rem(80);
 
   @include mq("md") {
-    margin-top: rem(160);
+    margin-top: rem(150);
   }
 }

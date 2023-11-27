@@ -2,8 +2,9 @@
 
 .price-list{
 display: block;
+margin-top: rem(8);
 }
 
-.price-list__item{
-  padding-top: rem(8);
+.price-list__item:not(:first-child){
+  margin-top: rem(8);
 }

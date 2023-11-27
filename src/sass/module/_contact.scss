@@ -6,6 +6,10 @@
   text-align: center;
 }
 
+.contact__items{
+  aspect-ratio: 1080/415;
+}
+
 .contact__inner{
  max-width: rem(600);
 }
@@ -25,5 +29,5 @@
 }
 
 .contact__button {
-  padding-top: rem(40);
+  margin-top:rem(40);
 }

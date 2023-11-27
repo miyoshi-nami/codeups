@@ -4,16 +4,19 @@ jQuery(function ($) {
     if ($('.js-hamburger').hasClass('is-open')) {
       $('.js-drawer-menu').fadeOut();
       $(this).removeClass('is-open');
-      $('body').removeClass('is-open');
-      $('gotop').removeClass('is-open');
+      $('.body').removeClass('is-open');
+      $('.gotop').removeClass('is-open');
+      $('.header').removeClass('headerColorScroll');
     } else {
       $('.js-drawer-menu').fadeIn();
       $(this).addClass('is-open');
-      $('body').addClass('is-open');
-      $('gotop').addClass('is-open');
+      $('.body').addClass('is-open');
+      $('.gotop').addClass('is-open');
+      $('.header').addClass('headerColorScroll');
     }
   });
-
+  
+ 
   // ページ内リンクがクリックされたときの処理
   $('#menu a').on('click', function (event) {
     var href = $(this).attr('href');

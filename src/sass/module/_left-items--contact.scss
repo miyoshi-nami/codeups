@@ -13,7 +13,7 @@
   border-bottom: 1px solid $green-accent;
 
   @include mq("md") {
-    padding-bottom: rem(6);
+    padding-bottom: rem(10);
   }
 }
 

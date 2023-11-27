@@ -9,12 +9,12 @@
 .column__left {
   width: 50%; /* カラムの幅を設定 */
   @include mq("md"){
-    padding-left: rem(16);
+    margin-left:  rem(0);
   }
 }
 
 .column__right {
-  padding-left: rem(20);
+  margin-left: rem(27);
   width: 50%; /* カラムの幅を設定 */
   @include mq("md"){
     // padding-left: rem(32);
