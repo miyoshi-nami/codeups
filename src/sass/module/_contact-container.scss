@@ -6,13 +6,14 @@
     // padding-top: calc(415/1080)*100%;
     // position: relative;
     width: 100%;
+    align-items: center;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
     /* ボックスシャドウの設定 */
   }
 }
 
 .contact-container__left {
-  padding: 0 rem(20);
+  // padding: 0 rem(20);
   @include mq(md) {
     // position: absolute;
     // left: calc(27/522)*100%;
@@ -21,24 +22,24 @@
     // padding: 0 rem(calc(80/522)*100) 0 0;
     // margin-top: rem(69);
     // margin-bottom: rem(91);
-    margin: rem(74) 0 auto 0;
+    // margin: rem(74) 0 auto 0;
     height: fit-content;
-    padding: 0 rem(80) 0 rem(47);
+    // padding: 0 rem(80) 0 rem(47);
     width: calc(569/1080)*100%;
     border-right: 1px solid $green-accent;
     }
 }
 
 .contact-container__right {
-  margin-top: rem(30);
+  // margin-top: rem(30);
   @include mq(md) {
     // position: absolute;
     // right: calc(115/1080)*100%;
     // top: 48%;
     // transform: translateY(-50%);
-    margin-left: calc(81/1080)*100%;
-    margin-top: rem(89);
-    width: calc(315/1080)*100%;
+    // margin-left: calc(81/1080)*100%;
+    // margin-top: rem(89);
+    // width: calc(315/1080)*100%;
     // transform: translateY(39%);
     // height: 100%;
     }

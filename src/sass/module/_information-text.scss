@@ -6,14 +6,14 @@
   @include mq("md") {
     width: calc(50% - rem(48));
     margin-left: rem(48);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
   }
 }
 
 .information-text__title {
-  padding-top: rem(25);
+  margin-top: rem(25);
   padding-bottom: rem(4);
   text-align: left;
   font-family: $jp1-font-family;
@@ -25,13 +25,13 @@
   border-bottom: 1px solid $green-accent;
 
   @include mq("md") {
-    padding-top: rem(5);
+    margin-top: rem(5);
     font-size: rem(24);
   }
 }
 
 .information-text__text {
-  padding-top: rem(9);
+  margin-top: rem(9);
   text-align: left;
   font-weight: $regular;
   letter-spacing: rem(calc(24/345));

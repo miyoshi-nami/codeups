@@ -1,5 +1,8 @@
 @use "global" as *;
 
 .right-items--contact{
-
+  padding-left: calc(81/1080)*100%;
+  padding-right: calc(115/1080)*100%;
+  // height: fit-content;
+  padding-bottom: rem(20);
 }

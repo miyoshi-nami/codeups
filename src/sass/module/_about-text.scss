@@ -25,6 +25,7 @@
   font-weight: $regular;
   color: $green-accent;
   line-height: (calc(40/40));
+  z-index: 500;
 
   @include mq("md") {
     width: fit-content;

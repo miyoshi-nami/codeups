@@ -3,6 +3,7 @@
 .blog {
   // position: relative;
   display: block;
+  position: relative;
   // text-align: center;
 
   @include mq(md) {
@@ -30,7 +31,7 @@
 }
 
 .blog__title {
-  position: relative;
+  // position: relative;
 }
 
 .blog__img {
@@ -39,8 +40,8 @@
   @include mq(md) {
     display: block;
     position: absolute;
-    top: rem(-76);
-    left: max(-7%, -6vw);
+    top: rem(80);
+    left: calc(50% - min(47vw,rem(570)));
     width: 34.180556%;
     max-width: rem(377);
   }

@@ -5,6 +5,7 @@
 
   @include mq("md") {
     display: flex;
+    align-items: center;
     // max-width: calc(100% + rem(48)*1/2);
   }
 }

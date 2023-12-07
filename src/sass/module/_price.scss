@@ -28,7 +28,7 @@
     display: block;
     position: absolute;
     bottom: rem(-170);
-    left: min(-6.94444%,2vw);
+    left: calc(50% - min(47vw,rem(570)));
     width: 39.347222%;
     max-width: rem(437);
     height: auto;

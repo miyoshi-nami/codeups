@@ -2,44 +2,48 @@
 
 .about-item {
   width: 100%;
-
+  aspect-ratio: calc(1080/1440)/calc(661/1440);
   @include mq("md") {
     position: relative;
   }
 }
 
-.about-item__img {
-  // padding-top: calc(212/345)*100%;
-  padding-top: 61.5%;
-  background: url(../images/common/ocean01-pc.jpg), url(../images/common/ocean02-pc.jpg);
-  background-position: left top, right (rem(26));
-  background-repeat: no-repeat, no-repeat;
-  background-size: calc(128/345)*100%, calc(281/345)*100%;
+// .about-item__img {
+//   // padding-top: calc(212/345)*100%;
+//   padding-top: 61.5%;
+//   background: url(../images/common/ocean01-pc.jpg), url(../images/common/ocean02-pc.jpg);
+//   background-position: left top, right (rem(26));
+//   background-repeat: no-repeat, no-repeat;
+//   background-size: calc(128/345)*100%, calc(281/345)*100%;
 
-  @include mq("md") {
-    // padding-top: rem(0);
-    background-position: left top, right bottom;
-    background-size: calc(400/1080)*100%, calc(880/1080)*100%;
-  }
+//   @include mq("md") {
+//     // padding-top: rem(0);
+//     background-position: left top, right bottom;
+//     background-size: calc(400/1080)*100%, calc(880/1080)*100%;
+//   }
+// }
+
+.about-item__img--01{
+  padding-top: calc(124/194)*100%;
 }
 
-// .about-item__img--02 img {
-//   object-fit: cover;
-//   aspect-ratio: calc(880/1440)/calc(581/1440);
-//   width: calc(880/1080)*100%;
-//   margin-left: auto;
+.about-item__img--02 img {
+  object-fit: cover;
+  width: calc(880/1080)*100%;
+  margin-left: auto;
+  padding-top: rem(80);
 
-// }
+}
 
-// .about-item__img--01 img {
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   width: calc(400/1080)*100%;
-//   height: auto;
-//   object-fit: cover;
-//   z-index: 1;
-// }
+.about-item__img--01 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(400/1080)*100%;
+  height: auto;
+  object-fit: cover;
+  z-index: 1;
+}
 
 .about-item__text {
   @include mq("md") {

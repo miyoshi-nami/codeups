@@ -9,7 +9,7 @@
   line-height: calc(28/16);
 
   @include mq(md) {
-    width: calc(146/440)*100%;
+    // width: calc(146/440)*100%;
     text-align: left;
   }
 }

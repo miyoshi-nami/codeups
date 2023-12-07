@@ -43,7 +43,8 @@
 }
 
 .l-card__title--campaign {
-  padding: rem(6) 0;
+  padding-bottom: rem(6);
+  margin-top: rem(6);
   font-size: rem(16);
   font-weight: $normal;
   border-bottom: 1px solid $green-accent;

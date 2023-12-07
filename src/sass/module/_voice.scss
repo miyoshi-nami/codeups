@@ -2,6 +2,7 @@
 
 .voice {
   display: block;
+  position: relative;
   // text-align: center;
 }
 
@@ -14,7 +15,7 @@
   margin-top: rem(30);
   @include mq(md) {
     max-width: 100%;
-    position: relative;
+    // position: relative;
     margin-top: rem(30);
     display: flex;
     flex-wrap: wrap;
@@ -36,8 +37,8 @@
   @include mq(md) {
     display: block;
     position: absolute;
-    top: rem(-175);
-    right: min(80%, 77vw);
+    top: rem(-80);
+    left: calc(50% - min(47vw,rem(570)));
     width: 29.902778%;
     height: auto;
     max-width: rem(301);
@@ -53,9 +54,9 @@
     // padding-top: rem(20);
     display: block;
     position: absolute;
-    bottom: rem(-200);
-    right: 0;
-    width: calc(71/1130)*100%;
+    bottom: rem(-80);
+    right: calc(50% - min(40vw,rem(540)));
+    width: calc(71/1440)*100%;
     height: auto;
 
   }
