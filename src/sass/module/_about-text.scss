@@ -19,7 +19,7 @@
 }
 
 .about-text__title {
-  padding-top: rem(30);
+  margin-top: rem(50);
   font-family: $en-font-family;
   font-size: rem(40);
   font-weight: $regular;
@@ -29,7 +29,7 @@
 
   @include mq("md") {
     width: fit-content;
-    padding-top: 0;
+    margin-top: 0;
     color: $white;
     font-size: rem(80);
     line-height: (calc(100/80));

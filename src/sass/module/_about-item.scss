@@ -2,10 +2,8 @@
 
 .about-item {
   width: 100%;
+  position: relative;
   aspect-ratio: calc(1080/1440)/calc(661/1440);
-  @include mq("md") {
-    position: relative;
-  }
 }
 
 // .about-item__img {
@@ -31,8 +29,10 @@
   object-fit: cover;
   width: calc(880/1080)*100%;
   margin-left: auto;
-  padding-top: rem(80);
-
+  padding-top: rem(20);
+  @include mq("md"){
+    padding-top: rem(80);
+  }
 }
 
 .about-item__img--01 img {

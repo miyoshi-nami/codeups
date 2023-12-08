@@ -3,7 +3,7 @@
 .left-items--contact {
   display: block;
   width: 100%;
-  max-width: calc(295/375)*100%;
+  // max-width: calc(295/375)*100%;
   margin-inline: auto;
 
   @include mq("md") {
@@ -11,7 +11,7 @@
     margin-inline: 0;
     padding-left: calc(47/1080)*100%;
     padding-right: calc(82/1080)*100%;
-    padding-bottom: rem(20);
+    // padding-bottom: rem(20);
   }
 }
 

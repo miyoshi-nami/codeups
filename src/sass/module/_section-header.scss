@@ -55,11 +55,11 @@
   font-family: $en-font-family;
   font-weight: $normal;
   line-height: 1;
-  padding-top: rem(10);
+  margin-top: rem(50);
   font-size: rem(80);
 
   @include mq("md") {
-    padding-top: rem(0);
+    margin-top: rem(0);
   }
 }
 

@@ -7,8 +7,12 @@
 }
 
 .contact__items{
-  aspect-ratio: 1080/415;
-  // padding-top: calc(69/1080)*100%;
+  @include mq("md"){
+    padding-top: rem(69);
+    padding-bottom: rem(91);
+    // aspect-ratio: 1080/415;
+    // padding-top: calc(69/1080)*100%;
+  }
 }
 
 .contact__inner{
@@ -25,7 +29,7 @@
     width: calc(301/1440)*100%;
     max-width: rem(301);
     top: rem(-53);
-    left: min(75.34%,77vw);
+    right: calc(50% - min(44vw,rem(600)));
   }
 }
 

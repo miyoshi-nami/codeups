@@ -30,7 +30,7 @@
 }
 
 .list__item {
-  margin-top: rem(30);
+  // margin-top: rem(30);
   padding-left: rem(20);
   font-weight: $bold;
   background-image: url(../images/common/hitode.png);
@@ -44,9 +44,7 @@
 }
 
 .list__item:not(:first-child) {
-  @include mq(md) {
     margin-top: rem(30);
-  }
 }
 
 .list__item a {
