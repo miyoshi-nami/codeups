@@ -15,14 +15,14 @@
   font-size: rem(40);
   font-weight: $regular;
   color: $white;
-  letter-spacing: 0.54em;
-  text-indent: rem(20);
+  letter-spacing: rem(1.6);
+  // text-indent: rem(20);
   font-family: $en2-font-family;
   text-align: center;
 
   @include mq("md") {
-    font-weight: $normal;
+    // font-weight: $normal;
     font-size: rem(80);
-    text-indent: rem(50);
+    // text-indent: rem(50);
   }
 }

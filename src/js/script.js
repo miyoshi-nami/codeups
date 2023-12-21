@@ -15,8 +15,8 @@ jQuery(function ($) {
       $('.header').addClass('headerColorScroll');
     }
   });
-  
- 
+
+
   // ページ内リンクがクリックされたときの処理
   $('#menu a').on('click', function (event) {
     var href = $(this).attr('href');
@@ -104,8 +104,6 @@ jQuery(function ($) {
     }
   });
 
-
-
   // ページを読み込んだ際の処理
   $(window).on('load', function () {
     var footer = $('footer');
@@ -129,15 +127,30 @@ jQuery(function ($) {
     });
   });
 
-  window.addEventListener('load', function() {
+  window.addEventListener('load', function () {
     var maxHeight = 0;
-    $('.card__subtitle').each(function(idx, elem) {
+    $('.card__subtitle').each(function (idx, elem) {
       var height = $(elem).height();
-      if(maxHeight < height) {
+      if (maxHeight < height) {
         maxHeight = height;
       }
     });
     $('.card__subtitle').height(maxHeight);
+  });
+
+  //下層campaignのタブ切り替え
+  $('.js-tab-menu').on('click', function () {
+    $('.js-tab-menu').removeClass('is-active');
+    $('.js-tab-content').removeClass('is-active');
+    $(this).addClass('is-active');
+
+    var number = $(this).data("number");
+    $('#' + number).addClass('is-active');
+
+    // クリックされたタブが"ALL"（tab01）の場合は、他のすべてのタブメニューにも'is-active'クラスを追加
+    if (number === 'tab01') {
+      $('.js-tab-content').addClass('is-active');
+    }
   });
 
 });

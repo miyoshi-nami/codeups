@@ -1,0 +1,11 @@
+@use "global" as *;
+
+.l-img__left {
+  display: block;
+  position: absolute;
+  top: rem(-80);
+  left: calc(50% - min(47vw, rem(570)));
+  width: 29.902778%;
+  height: auto;
+  max-width: rem(301);
+}

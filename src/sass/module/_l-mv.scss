@@ -11,7 +11,7 @@ aspect-ratio: 1440/548;
 
 .l-mv-img picture{
   display: block;
-  height: 100%;
+  height: calc(460/375)*100%;
   object-fit: cover;
 }
 

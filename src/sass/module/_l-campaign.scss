@@ -1,0 +1,130 @@
+@use "global" as *;
+
+.l-campaign__area {
+  margin-top: rem(52);
+
+  @include mq("md") {
+    margin-top: rem(150);
+  }
+}
+
+.l-campaign--card__text {
+  display: none;
+
+  @include mq("md") {
+    display: block;
+    font-size: rem(16);
+    font-family: $jp1-font-family;
+    line-height: calc(24/16);
+  }
+}
+
+.l-campaign-campaign__items {
+  margin-top: rem(40);
+  padding-bottom: rem(5);
+}
+
+.l-campaign-card-list--campaign {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.l-campaign--card-list--campaign__item {
+  display: none;
+  width: 100%;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+
+  @include mq("md") {
+    width: calc(520/1080)*100%;
+  }
+
+}
+
+.l-campaign--card-list--campaign__item:nth-child(2n) {
+  margin-left: rem(28);
+}
+
+.l-campaign--card-list--campaign__item:nth-child(n + 3) {
+  margin-top: rem(40);
+}
+
+.l-campaign--card-list--campaign__item.is-active {
+  display: block;
+}
+
+.l-campaign-tab {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.l-campaign-tab__menu {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.l-campaign-tab__menu-item {
+  width: rem(162);
+  padding: rem(6) 0;
+  text-align: center;
+  border: 1px $green-accent solid;
+  color: $green-accent;
+
+  @include mq("md") {}
+}
+
+.l-campaign-tab__menu-item:nth-child(n+2) {
+  margin-left: rem(21);
+
+  @include mq("md") {
+    margin-left: rem(32);
+  }
+}
+
+.l-campaign-tab__menu-item:nth-child(n+3) {
+  margin-top: rem(16);
+}
+
+.l-campaign-tab__menu-item:nth-child(3n) {
+  margin-left: 0;
+
+  @include mq("md") {
+    margin-left: rem(32);
+  }
+}
+
+.l-campaign-tab__menu-item:nth-child(6n) {
+  @include mq("md") {
+    margin-left: 0;
+  }
+}
+
+.l-campaign-tab__menu-item:nth-child(n+6) {
+  @include mq("md") {
+    margin-top: rem(20);
+  }
+}
+
+.l-campaign-tab__menu-item.is-active {
+  background-color: $green-accent;
+  color: $white;
+}
+
+.l-campaign-tab__content {}
+
+.l-campaign__breadcrumbs {
+  margin-top: rem(8);
+}
+
+.l-campaign__contact-time {
+  font-family: $en2-font-family;
+  font-weight: $normal;
+  font-size: rem(16);
+  color: $green-accent;
+}
+
+.l-campaign__contact-coment {
+  font-family: $jp1-font-family;
+  font-weight: $regular;
+  color: $green-accent;
+  font-size: rem(14);
+}

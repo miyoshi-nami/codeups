@@ -36,7 +36,7 @@
 </head>
 
 <body class="body">
-  <header class="header">
+  <header class="header js-header">
     <div class="header__inner">
       <h1 class="logo">
         <a href="#" class="logo__link">
@@ -130,138 +130,14 @@
     </div>
   </header>
   <main>
-    <section class="l-mv">
-      <div class="l-mv__title l-title">
-        <h2 class="l-title__main">campaign</h2>
-      </div>
-      <div class="l-mv__area l-mv-img">
-        <picture>
-          <source srcset="./assets/images/common/campaign-img.jpg" media="(min-width: 768px)" />
-          <img src="./assets/images/common/campaign-img__sp.jpg" alt="海のイメージ写真01">
-        </picture>
-      </div>
-    </section>
-    <article id="campaign-tag" class="section__campaign campaign">
-      <div class="campaign__inner inner">
+
+    <div class="l-img__left">
+      <img src="./assets/images/common/fish04.svg" alt="キンギョハナダイの群れ">
+    </div>
+    <article id="campaign-tag" class="section-campaign campaign">
+      <div class="inner">
         <p class="l-campaign__breadcrumbs breadcrumbs">TOP&gt;キャンペーン</p>
         <div class="l-campaign__area l-campaign-tab">
-          <ul class="l-campaign-tab__menu">
-            <li class="l-campaign-tab__menu-item js-tab-menu is-active" data-number="tab01">ALL</li>
-            <li class="l-campaign-tab__menu-item js-tab-menu" data-number="tab02">ライセンス講習</li>
-            <li class="l-campaign-tab__menu-item js-tab-menu" data-number="tab03">ファンダイビング</li>
-            <li class="l-campaign-tab__menu-item js-tab-menu" data-number="tab04">体験ダイビング</li>
-          </ul>
-          <ul class="l-campaign-tab__content">
-            <div class="l-campaign-campaign__items l-campaign-card-list--campaign">
-              <li id="tab02" class="l-campaign--card-list--campaign__item card js-tab-content is-active">
-                <figure class="card__img">
-                  <img src="./assets/images/common/campaign01.jpg" alt="イメージ写真">
-                </figure>
-                <div class="card__inner">
-                  <div class="card__tag--campaign">ライセンス講習</div>
-                  <h3 class="card__title--campaign">
-                    ライセンス取得
-                  </h3>
-                  <p class="card__subtitle">
-                    全部コミコミ(お一人様)
-                  </p>
-                  <div class="card__price  price--campaign">
-                    <p class="price--campaign__small">
-                      <span>¥56,000</span>
-                    </p>
-                    <p class="price--campaign__big">
-                      ¥46,000
-                    </p>
-                  </div>
-                  <p class="l-campaign--card__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
-                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
-                  </p>
-                </div>
-              </li>
-              <li id="tab04" class="l-campaign--card-list--campaign__item card js-tab-content is-active">
-                <figure class="card__img">
-                  <img src="./assets/images/common/campaign02.jpg" alt="イメージ写真">
-                </figure>
-                <div class="card__inner">
-                  <div class="card__tag--campaign">体験ダイビング</div>
-                  <h3 class="card__title--campaign">
-                    貸切体験ダイビング
-                  </h3>
-                  <p class="card__subtitle">
-                    全部コミコミ(お一人様)
-                  </p>
-                  <div class="card__price price--campaign">
-                    <p class="price--campaign__small">
-                      <span>¥24,000</span>
-                    </p>
-                    <p class="price--campaign__big">
-                      ¥18,000
-                    </p>
-                  </div>
-                  <p class="l-campaign--card__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
-                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
-                  </p>
-                </div>
-              </li>
-              <li id="tab04" class="l-campaign--card-list--campaign__item card js-tab-content is-active">
-                <figure class="card__img">
-                  <img src="./assets/images/common/campaign03.jpg" alt="イメージ写真">
-                </figure>
-                <div class="card__inner">
-                  <div class="card__tag--campaign">体験ダイビング</div>
-                  <h3 class="card__title--campaign">
-                    ナイトダイビング
-                  </h3>
-                  <p class="card__subtitle">
-                    全部コミコミ(お一人様)
-                  </p>
-                  <div class="card__price price--campaign">
-                    <p class="price--campaign__small">
-                      <span>¥10,000</span>
-                    </p>
-                    <p class="price--campaign__big">
-                      ¥8,000
-                    </p>
-                  </div>
-                  <p class="l-campaign--card__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
-                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
-                  </p>
-                </div>
-              </li>
-              <li id="tab03" class="l-campaign--card-list--campaign__item card js-tab-content is-active">
-                <figure class="card__img">
-                  <img src="./assets/images/common/campaign04.jpg" alt="イメージ写真">
-                </figure>
-                <div class="card__inner">
-                  <div class="card__tag--campaign">ファンダイビング</div>
-                  <h3 class="card__title--campaign">
-                    貸切ファンダイビング
-                  </h3>
-                  <p class="card__subtitle">
-                    全部コミコミ(お一人様)
-                  </p>
-                  <div class="card__price price--campaign">
-                    <p class="price--campaign__small">
-                      <span>¥20,000</span>
-                    </p>
-                    <p class="price--campaign__big">
-                      ¥16,000
-                    </p>
-                  </div>
-                  <p class="l-campaign--card__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
-                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
-                  </p>
-                  <div class="l-campaign__contact">
-                    <p class="l-campaign__contact-time">2023/6/1-9/30</p>
-                    <p class="l-campaign__contact-coment">ご予約・お問い合わせはコチラ</p>
-                    <div class="contact__button">
-                      <a href="#" class="button">Contact us<span class="arrow"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </div>
-          </ul>
         </div>
       </div>
     </article>
